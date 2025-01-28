@@ -9,7 +9,7 @@ public class PassengerManager : MonoBehaviour
     
     public void SpawnPassenger(Lane lane, PassengerColor color)
     {
-        int index = Random.Range(0, lane.PassengerSpawnPoints.Length);
+        int index = 1;
 
         Passenger passengerPrefab = null;
         

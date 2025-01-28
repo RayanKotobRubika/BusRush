@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d737b3be9e000e14fbd82ad213a084bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 2
+  _movementSpeed: 1.5
   <AssignedColor>k__BackingField: 0
 --- !u!1 &4712676875904732565
 GameObject:

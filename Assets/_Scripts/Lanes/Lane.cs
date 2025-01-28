@@ -13,7 +13,14 @@ public class Lane : MonoBehaviour
     {
         Obstacles = new Obstacle[5];
         
-        PassengerSpawnPoints = GetComponentsInChildren<Transform>();
+        PassengerSpawnPoints = new Transform[3];
+        
+        Transform[] spawnPoints = GetComponentsInChildren<Transform>();
+
+        for (int i = 1; i < spawnPoints.Length; i++)
+        {
+            PassengerSpawnPoints[i-1] = spawnPoints[i];
+        }
     }
 
     
