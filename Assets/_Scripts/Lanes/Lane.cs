@@ -1,20 +1,28 @@
 using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Lane : MonoBehaviour
 {
-    private Obstacle[] _obstacles;
-    private Transform[] _passengerSpawnPoints;
+    public Obstacle[] Obstacles { get; private set; }
+    public Transform[] PassengerSpawnPoints { get; private set; }
     
     [field:SerializeField] public int Index { get; private set; }
 
     private void Awake()
     {
-        int obstaclesPerLane = LaneManager.Instance.ObstaclesPerLane;
-        _obstacles = new Obstacle[obstaclesPerLane];
+        Obstacles = new Obstacle[5];
         
-        _passengerSpawnPoints = GetComponentsInChildren<Transform>();
+        PassengerSpawnPoints = new Transform[3];
+        
+        Transform[] spawnPoints = GetComponentsInChildren<Transform>();
+
+        for (int i = 1; i < spawnPoints.Length; i++)
+        {
+            PassengerSpawnPoints[i-1] = spawnPoints[i];
+        }
     }
+
     
     
 }
