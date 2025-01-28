@@ -4,12 +4,31 @@ using Random = UnityEngine.Random;
 
 public class PassengerManager : MonoBehaviour
 {
+    public static PassengerManager Instance { get; private set; }
+    
     [SerializeField] private Passenger[] _passengerPrefabs;
     [SerializeField] private Transform _passengerContainer;
     
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) 
+        { 
+            Destroy(this);
+            return;
+        } 
+        
+        Instance = this; 
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.P))
+            SpawnPassenger(LaneManager.Instance.Lanes[Random.Range(0, 3)] , (PassengerColor)Random.Range(0, 3));
+    }
+    
     public void SpawnPassenger(Lane lane, PassengerColor color)
     {
-        int index = 1;
+        int index = Random.Range(0,lane.PassengerSpawnPoints.Length);
 
         Passenger passengerPrefab = null;
         
@@ -24,14 +43,5 @@ public class PassengerManager : MonoBehaviour
         Passenger passenger = Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, 
             Quaternion.identity, _passengerContainer);
         passenger.Initialize(lane);
-    }
-
-    private float _timer = 1f;
-    private void Update()
-    {
-        _timer -= Time.deltaTime;
-        if (_timer > 0) return;
-        _timer = 1f;
-        SpawnPassenger(LaneManager.Instance.Lanes[Random.Range(0, 3)] , (PassengerColor)Random.Range(0, 3));
     }
 }
