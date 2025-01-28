@@ -1,11 +1,14 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LaneManager : MonoBehaviour
 {
     public static LaneManager Instance { get; private set; }
     
-    [field:SerializeField] public int ObstaclesPerLane { get; private set; }
+    [field:SerializeField] public Lane[] Lanes { get; private set; }
+    
+    [field:SerializeField] public Transform LanesArrivalZ { get; private set; }
 
     private void Awake()
     {
@@ -16,6 +19,5 @@ public class LaneManager : MonoBehaviour
         } 
         
         Instance = this; 
-        
     }
 }
