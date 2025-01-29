@@ -1779,15 +1779,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1299606196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea2e6945da0a6804488f43d1330127f5, type: 3}
+  m_Script: {fileID: 11500000, guid: e5c2611ef1e527e4c86198b88aa4efb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PressAction: {fileID: 8166496630900582287, guid: df5c687ac7efffa459485544b8202589, type: 3}
-  DragAction: {fileID: 2459945727738726788, guid: df5c687ac7efffa459485544b8202589, type: 3}
-  ReleaseAction: {fileID: -4475112275895613708, guid: df5c687ac7efffa459485544b8202589, type: 3}
-  _mainCamera: {fileID: 1830320029}
-  _isDragging: 0
-  _selectedObject: {fileID: 0}
+  TouchOrDragThreshold: 0.3
 --- !u!1 &1305770791
 GameObject:
   m_ObjectHideFlags: 0
