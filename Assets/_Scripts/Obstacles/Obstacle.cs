@@ -1,16 +1,25 @@
+using System;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public bool IsPlaced { get; private set; }
+    [field:SerializeField] public Vector2 Dimensions { get; private set; }
+
+    private void Awake()
+    {
+        IsPlaced = false;
+    }
+
+    private void OnEnable()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
         
     }
+    
+    
 }

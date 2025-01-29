@@ -1,33 +1,33 @@
 {
-    "name": "PlayerInputActions",
+    "name": "TouchControls",
     "maps": [
         {
-            "name": "Player",
+            "name": "Touch",
             "id": "a3e117e0-b6a7-4cd0-bcc1-99bb345290a2",
             "actions": [
                 {
-                    "name": "Press",
-                    "type": "Value",
-                    "id": "3189ff78-8a03-47e7-a64f-731caaede730",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Drag",
-                    "type": "Button",
-                    "id": "56a15419-4982-414d-b41b-c659c3a54d6d",
+                    "name": "TouchInput",
+                    "type": "PassThrough",
+                    "id": "9146a6c5-a587-47a9-be1c-a39182d1e39b",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Release",
+                    "name": "TouchPress",
                     "type": "Button",
-                    "id": "9bdde027-332e-4479-aa0b-6a21d1fa1917",
+                    "id": "597e1b7a-f354-4395-8a3f-1ebc14eea1f2",
                     "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TouchPosition",
+                    "type": "PassThrough",
+                    "id": "b4f04af8-67b2-40cc-b3f8-3f8e8efaaaf2",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -36,34 +36,34 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "5aa7707e-daa6-4dae-bf94-04d0384af571",
-                    "path": "<Touchscreen>/Press",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Press",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "61214b19-9247-4e96-866b-56ae8172911e",
-                    "path": "<Touchscreen>/primaryTouch/position",
+                    "id": "55b0ee30-1ae9-4732-b685-df66cfb83594",
+                    "path": "<Touchscreen>/primaryTouch",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Drag",
+                    "action": "TouchInput",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "de59ced4-6166-4cda-b67a-d6ddc625d67d",
-                    "path": "<Touchscreen>/Press",
-                    "interactions": "Press(behavior=1)",
+                    "id": "bcd98e31-333d-4643-bd27-9e0f22c548bf",
+                    "path": "<Touchscreen>/primaryTouch/press",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Release",
+                    "action": "TouchPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fbde1b36-10f9-4c7c-895d-d744ae90c555",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPosition",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
