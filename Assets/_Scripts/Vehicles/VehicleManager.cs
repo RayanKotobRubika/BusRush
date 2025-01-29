@@ -44,20 +44,27 @@ public class VehicleManager : MonoBehaviour
 
     private void Start()
     {
-        
         _initTimer = _spawnDelay;
         SpawnFirstVehicle();
     }
 
     private void Update()
     {
+        if (CurrentVehicles[0] == null)
+        {
+            if (!GameManager.Instance.IsGameOver && VehicleList.Count == 0)
+                GameManager.Instance.WinGame();
+            else
+                return;
+        }
+        
         UpdateText();
         UpdateColor();
 
         BusIsActive = CurrentVehicles[0].transform.position == VehiclesPositionsPoints[0].position
                       && CurrentVehicles[0].CurrentPassengers < CurrentVehicles[0].Capacity;
         
-        if (CurrentVehicles[^1] == null)
+        if (CurrentVehicles[^1] == null && VehicleList.Count > 0)
         {
             _initTimer -= Time.deltaTime;
 
@@ -70,14 +77,9 @@ public class VehicleManager : MonoBehaviour
             }
         }
         else
-        {
             _initTimer = _spawnDelay;
-        }
         
-        if (VehicleList.Count == 0 && CurrentVehicles[0] == null && !GameManager.Instance.IsGameOver)
-            GameManager.Instance.WinGame();
-        
-        if (CurrentVehicles[0].CurrentPassengers >= CurrentVehicles[0].Capacity)
+        if (CurrentVehicles[0].CurrentPassengers >= CurrentVehicles[0].Capacity && CurrentVehicles[0] != null)
             MoveAllVehicles();
     }
     
@@ -132,11 +134,13 @@ public class VehicleManager : MonoBehaviour
             if (i == 0)
             {
                 CurrentVehicles[i].MoveVehicle(VehicleLastPoint.position);
+                CurrentVehicles[i] = null;
             }
             else
             {
                 CurrentVehicles[i].MoveVehicle(VehiclesPositionsPoints[i - 1].position);
                 CurrentVehicles[i - 1] = CurrentVehicles[i];
+                CurrentVehicles[i] = null;
             }
         }
 
