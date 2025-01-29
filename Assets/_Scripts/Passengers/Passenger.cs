@@ -18,6 +18,8 @@ public class Passenger : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.IsGameOver)
+            Stop();
         Move();
     }
 
@@ -26,6 +28,11 @@ public class Passenger : MonoBehaviour
         Vector3 targetPos = new Vector3(transform.position.x, transform.position.y, LaneManager.Instance.LanesArrivalZ.position.z);
         
         _agent.SetDestination(targetPos);
+    }
+
+    private void Stop()
+    {
+        _agent.SetDestination(transform.position);
     }
 
     public void Initialize(Lane lane)
