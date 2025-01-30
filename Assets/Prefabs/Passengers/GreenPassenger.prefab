@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d737b3be9e000e14fbd82ad213a084bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeed: 4
-  <AssignedColor>k__BackingField: 1
+  <MovementSpeed>k__BackingField: 2
+  <Color>k__BackingField: 1
 --- !u!1 &3205312120131545667
 GameObject:
   m_ObjectHideFlags: 0

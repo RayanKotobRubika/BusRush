@@ -22,7 +22,7 @@ public class VehicleManager : MonoBehaviour
     [field:SerializeField] public Transform VehicleLastPoint { get; private set; }
     
     [field:SerializeField] public Vehicle[] CurrentVehicles { get; private set; }
-    [field:SerializeField] public List<Vehicle> VehicleList { get; private set; }
+    public List<Vehicle> VehicleList { get; private set; }
 
     [SerializeField] private Transform _vehicleHolder;
     
@@ -37,6 +37,8 @@ public class VehicleManager : MonoBehaviour
         Instance = this;
 
         _colorUpdated = false;
+        
+        VehicleList = new List<Vehicle>(LevelManager.Instance.Data.VehicleList);
 
         CurrentVehicles = new Vehicle[VehiclesPositionsPoints.Length];
         BusIsActive = false;
@@ -142,5 +144,8 @@ public class VehicleManager : MonoBehaviour
 
         if (VehicleList.Count > 0)
             CurrentVehicles[^1] = SpawnVehicle();
+        
+        if (CurrentVehicles[0] != null)
+            LevelManager.Instance.ChangeRateAndOdds(CurrentVehicles[0]);
     }
 }
