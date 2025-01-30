@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movementSpeed: 4
-  <AssignedColor>k__BackingField: 2
+  <AssignedColor>k__BackingField: 1
 --- !u!1 &3205312120131545667
 GameObject:
   m_ObjectHideFlags: 0

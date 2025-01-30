@@ -70,7 +70,6 @@ public class VehicleManager : MonoBehaviour
 
             if (_initTimer <= 0)
             {
-                Debug.Log("Time Spawn");
                 _initTimer = _spawnDelay;
                 CurrentVehicles[^1] = SpawnVehicle();
                 MoveVehicleToFirstFreeSpot();
@@ -103,7 +102,6 @@ public class VehicleManager : MonoBehaviour
 
     private void SpawnFirstVehicle()
     {
-        Debug.Log("First Spawn");
         CurrentVehicles[0] = SpawnVehicle();
         CurrentVehicles[0].MoveVehicle(VehiclesPositionsPoints[0].position);
     }
@@ -114,7 +112,6 @@ public class VehicleManager : MonoBehaviour
         {
             if (CurrentVehicles[i] != null) continue;
 
-            Debug.Log("Free spot : "+i);
             CurrentVehicles[i] = CurrentVehicles[^1];
             CurrentVehicles[i].MoveVehicle(VehiclesPositionsPoints[i].position);
             CurrentVehicles[^1] = null;
@@ -124,7 +121,6 @@ public class VehicleManager : MonoBehaviour
 
     private void MoveAllVehicles()
     {
-        Debug.Log("Moving Everything");
         _colorUpdated = false;
         
         for (int i = 0; i < CurrentVehicles.Length; i++)

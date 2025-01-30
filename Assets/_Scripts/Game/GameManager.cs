@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     
+    [field:SerializeField] public Camera MainCamera { get; private set; }
+    
     public bool IsGameOver { get; private set; }
 
     private void Awake()

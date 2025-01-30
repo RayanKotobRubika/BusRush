@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Capacity>k__BackingField: 16
-  <Color>k__BackingField: 1
+  <Color>k__BackingField: 2
   _bouncyScaleFactor: 1.2
   _bounceDuration: 0.15
   _movementSpeed: 5
