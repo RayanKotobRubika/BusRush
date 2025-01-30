@@ -42,15 +42,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fres_Step: 1.73
+    - _Fres_Step: 1.3
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScrolSpeed: -0.28
-    - _ShadowStep: 0.66
+    - _ShadowStep: 0.24
     m_Colors:
     - _Color: {r: 0.21857378, g: 0.2735849, b: 0.21551263, a: 0}
     - _Color_1: {r: 0.33963582, g: 0.4433962, b: 0.3241812, a: 0}
-    - _Dark_color: {r: 0.6698113, g: 0.39493588, b: 0.39493588, a: 0}
+    - _Dark_color: {r: 0.990566, g: 0.5934051, b: 0.5934051, a: 0}
     - _OutlineColor: {r: 0, g: 0.28356928, b: 0.7735849, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
