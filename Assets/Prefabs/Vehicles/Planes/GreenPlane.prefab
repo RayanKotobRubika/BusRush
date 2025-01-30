@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4713687540160088495}
   - component: {fileID: 3831798318206814679}
   m_Layer: 0
-  m_Name: BluePlane
+  m_Name: GreenPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,7 +115,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f2ee3d886db3ab428a575cf4c4e1ac4, type: 2}
+  - {fileID: 2100000, guid: 84bb5abb9e0a4474ebd57fd367fe1be1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

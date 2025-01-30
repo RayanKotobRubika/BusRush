@@ -12,10 +12,10 @@ public class Lane : MonoBehaviour
     private void Awake()
     {
         Obstacles = new Obstacle[5];
-        
-        PassengerSpawnPoints = new Transform[3];
-        
+
         Transform[] spawnPoints = GetComponentsInChildren<Transform>();
+        
+        PassengerSpawnPoints = new Transform[spawnPoints.Length - 1];
 
         for (int i = 1; i < spawnPoints.Length; i++)
         {
