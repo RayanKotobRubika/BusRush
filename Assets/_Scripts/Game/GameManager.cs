@@ -25,6 +25,12 @@ public class GameManager : MonoBehaviour
     public void WinGame()
     {
         IsGameOver = true;
-        Debug.Log("Level Completed !");
+        Debug.Log("LEVEL COMPLETED !");
+    }
+
+    public void LoseGame()
+    {
+        IsGameOver = true;
+        Debug.Log("LEVEL FAILED !");
     }
 }

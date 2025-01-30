@@ -3,17 +3,17 @@ using UnityEngine.AI;
 
 public class Passenger : MonoBehaviour
 {
-    [SerializeField] private float _movementSpeed;
-    private NavMeshAgent _agent;
+    [field:SerializeField] public float MovementSpeed { get; private set; }
+    public NavMeshAgent Agent { get; private set; }
 
-    [field:SerializeField] public PassengerColor AssignedColor { get; private set; }
+    [field:SerializeField] public PassengerColor Color { get; private set; }
     public Lane AssignedLane { get; private set; }
 
     private void Awake()
     {
-        _agent = GetComponent<NavMeshAgent>();
+        Agent = GetComponent<NavMeshAgent>();
         
-        _agent.speed = _movementSpeed;
+        Agent.speed = MovementSpeed;
     }
 
     private void Update()
@@ -27,12 +27,12 @@ public class Passenger : MonoBehaviour
     {
         Vector3 targetPos = new Vector3(transform.position.x, transform.position.y, LaneManager.Instance.LanesArrivalZ.position.z);
         
-        _agent.SetDestination(targetPos);
+        Agent.SetDestination(targetPos);
     }
 
     private void Stop()
     {
-        _agent.SetDestination(transform.position);
+        Agent.SetDestination(transform.position);
     }
 
     public void Initialize(Lane lane)
