@@ -34,7 +34,7 @@ public class PassengerManager : MonoBehaviour
         
         foreach (Passenger p in _passengerPrefabs)
         {
-            if (p.AssignedColor != color) continue;
+            if (p.Color != color) continue;
 
             passengerPrefab = p;
             break;

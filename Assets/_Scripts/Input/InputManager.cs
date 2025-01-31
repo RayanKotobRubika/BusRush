@@ -3,7 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[DefaultExecutionOrder(-1)]
+[DefaultExecutionOrder(-2)]
 public class InputManager : MonoBehaviour
 {
     public static InputManager Instance { get; private set; }
@@ -92,16 +92,12 @@ public class InputManager : MonoBehaviour
         _touchStartPosition = _touchControls.Touch.TouchPosition.ReadValue<Vector2>();
         _touchStartTime = (float)context.startTime;
         
-        Debug.Log("Touch started "+ _touchStartPosition);
-        
         TouchOngoing = true;
         if (OnStartTouch != null) OnStartTouch(_touchStartPosition, _touchStartTime);
     }
     
     private void EndTouch(InputAction.CallbackContext context)
     {
-        Debug.Log("Touch ended "+ _touchControls.Touch.TouchPosition.ReadValue<Vector2>());
-        
         TouchOngoing = false;
         if (OnEndTouch != null) OnEndTouch(_touchControls.Touch.TouchPosition.ReadValue<Vector2>(), (float)context.time);
         
