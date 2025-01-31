@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -34,14 +33,12 @@ public class PassengerManager : MonoBehaviour
         
         foreach (Passenger p in _passengerPrefabs)
         {
-            if (p.AssignedColor != color) continue;
+            if (p.Color != color) continue;
 
             passengerPrefab = p;
             break;
         }
         
-        Passenger passenger = Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, 
-            Quaternion.identity, _passengerContainer);
-        passenger.Initialize(lane);
+        Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, Quaternion.identity, _passengerContainer);
     }
 }

@@ -1,17 +1,16 @@
-using System;
 using UnityEngine;
 
 public class LaneArrival : MonoBehaviour
 {
-    [SerializeField] private SliderWaitingQueues[] _sliders;
-    
+    [SerializeField] private WaitingQueues[] _sliders;
+
     private void OnTriggerEnter(Collider other)
     {
         if (!other.TryGetComponent(out Passenger passenger)) return;
-
-        foreach (SliderWaitingQueues slider in _sliders)
+    
+        foreach (WaitingQueues slider in _sliders)
         {
-            if (passenger.AssignedColor != slider.Color) continue;
+            if (passenger.Color != slider.Color) continue;
             
             slider.AddPassenger();
             Destroy(passenger.gameObject);

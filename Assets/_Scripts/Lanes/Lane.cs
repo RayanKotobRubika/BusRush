@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class Lane : MonoBehaviour
 {
@@ -22,7 +20,4 @@ public class Lane : MonoBehaviour
             PassengerSpawnPoints[i-1] = spawnPoints[i];
         }
     }
-
-    
-    
 }
