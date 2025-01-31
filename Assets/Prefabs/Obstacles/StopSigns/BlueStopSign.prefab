@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3571633791635076988}
   - component: {fileID: 5303738332828666216}
   m_Layer: 0
-  m_Name: BlueWaterPond
+  m_Name: BlueStopSign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

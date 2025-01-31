@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4367867428257750686}
   - component: {fileID: 3700644609064170710}
   m_Layer: 0
-  m_Name: GreenWaterPond
+  m_Name: GreenStopSign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
