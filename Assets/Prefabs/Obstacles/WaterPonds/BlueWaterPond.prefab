@@ -123,5 +123,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Color>k__BackingField: 2
   <Dimensions>k__BackingField: {x: 2, y: 2}
-  <Cost>k__BackingField: 30
+  <CatBellCost>k__BackingField: 30
   <LifeTime>k__BackingField: 5
