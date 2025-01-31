@@ -8,11 +8,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2025
 		Month: 1
-		Day: 30
-		Hour: 17
-		Minute: 27
-		Second: 3
-		Millisecond: 512
+		Day: 31
+		Hour: 10
+		Minute: 52
+		Second: 33
+		Millisecond: 650
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.3.5"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -28,19 +28,19 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "C:\Users\s.selami\Desktop\SM_préhaut.fbx"
-			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\s.selami\Desktop\SM_préhaut.fbx"
+			P: "DocumentUrl", "KString", "Url", "", "C:\Users\s.selami\Desktop\SM_préau.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Users\s.selami\Desktop\SM_préau.fbx"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "3ds Max"
 			P: "Original|ApplicationVersion", "KString", "", "", "2025"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "30/01/2025 16:27:03.511"
-			P: "Original|FileName", "KString", "", "", "C:\Users\s.selami\Desktop\SM_préhaut.fbx"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "31/01/2025 09:52:33.649"
+			P: "Original|FileName", "KString", "", "", "C:\Users\s.selami\Desktop\SM_préau.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2025"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "30/01/2025 16:27:03.511"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "31/01/2025 09:52:33.649"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "C:\Users\s.selami\Documents\3ds Max 2025"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "C:\Users\s.selami\Desktop\préhaut.max"
 		}
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1565050185776, "", "Scene" {
+	Document: 1834089147568, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -208,10 +208,10 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	NodeAttribute: 1562879826624, "NodeAttribute::", "Null" {
+	NodeAttribute: 1833260903392, "NodeAttribute::", "Null" {
 		TypeFlags: "Null"
 	}
-	Geometry: 1565014659824, "Geometry::", "Mesh" {
+	Geometry: 1835134316784, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.682352941176471,0.380392156862745,0.545098039215686
 		}
@@ -274,7 +274,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 1565014658864, "Geometry::", "Mesh" {
+	Geometry: 1835134338384, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.36078431372549,0.0666666666666667,0.211764705882353
 		}
@@ -337,7 +337,7 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 1565014679024, "Geometry::", "Mesh" {
+	Geometry: 1835134323984, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.419607843137255,0.149019607843137,0.627450980392157
 		}
@@ -400,12 +400,12 @@ Objects:  {
 			}
 		}
 	}
-	Geometry: 1565014682384, "Geometry::", "Mesh" {
+	Geometry: 1835134312464, "Geometry::", "Mesh" {
 		Properties70:  {
 			P: "Color", "ColorRGB", "Color", "",0.137254901960784,0.117647058823529,0.619607843137255
 		}
 		Vertices: *12 {
-			a: -1.87872409820557,-0.857485473155975,0,1.87872409820557,-0.857485473155975,0,-1.87872409820557,0.857485473155975,0,1.87872409820557,0.857485473155975,0
+			a: -1.95387303829193,-0.857485473155975,0,1.95387303829193,-0.857485473155975,0,-1.95387303829193,0.857485473155975,0,1.95387303829193,0.857485473155975,0
 		} 
 		PolygonVertexIndex: *4 {
 			a: 0,1,3,-3
@@ -463,7 +463,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 1565045181632, "Model::Préhaut", "Null" {
+	Model: 1835130315472, "Model::Préau", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "PreRotation", "Vector3D", "Vector", "",-90,-0,0
@@ -477,7 +477,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 1565045172864, "Model::Préhau_pilier_01", "Mesh" {
+	Model: 1835130346160, "Model::Préau_pilier_01", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -489,7 +489,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 1565045175056, "Model::Préhau_pilier_02", "Mesh" {
+	Model: 1835130317664, "Model::Préau_pilier_02", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -501,7 +501,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 1565045177248, "Model::Préhau_Enter", "Mesh" {
+	Model: 1835130319856, "Model::Préau_Enter", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -513,7 +513,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 1565045179440, "Model::Préhau_toit", "Mesh" {
+	Model: 1835130348352, "Model::Préau_toit", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -525,7 +525,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Model: 1565045153136, "Model::Préhau_VFX_Gate", "Mesh" {
+	Model: 1835130365888, "Model::Préau_VFX_Gate", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "InheritType", "enum", "", "",1
@@ -545,39 +545,39 @@ Objects:  {
 
 Connections:  {
 	
-	;Model::Préhaut, Model::RootNode
-	C: "OO",1565045181632,0
+	;Model::Préau, Model::RootNode
+	C: "OO",1835130315472,0
 	
-	;Model::Préhau_pilier_01, Model::Préhaut
-	C: "OO",1565045172864,1565045181632
+	;Model::Préau_pilier_01, Model::Préau
+	C: "OO",1835130346160,1835130315472
 	
-	;Model::Préhau_pilier_02, Model::Préhaut
-	C: "OO",1565045175056,1565045181632
+	;Model::Préau_pilier_02, Model::Préau
+	C: "OO",1835130317664,1835130315472
 	
-	;Model::Préhau_Enter, Model::Préhaut
-	C: "OO",1565045177248,1565045181632
+	;Model::Préau_Enter, Model::Préau
+	C: "OO",1835130319856,1835130315472
 	
-	;Model::Préhau_toit, Model::Préhaut
-	C: "OO",1565045179440,1565045181632
+	;Model::Préau_toit, Model::Préau
+	C: "OO",1835130348352,1835130315472
 	
-	;Model::Préhau_VFX_Gate, Model::Préhaut
-	C: "OO",1565045153136,1565045181632
+	;Model::Préau_VFX_Gate, Model::Préau
+	C: "OO",1835130365888,1835130315472
 	
-	;NodeAttribute::, Model::Préhaut
-	C: "OO",1562879826624,1565045181632
+	;NodeAttribute::, Model::Préau
+	C: "OO",1833260903392,1835130315472
 	
-	;Geometry::, Model::Préhau_pilier_01
-	C: "OO",1565014659824,1565045172864
+	;Geometry::, Model::Préau_pilier_01
+	C: "OO",1835134316784,1835130346160
 	
-	;Geometry::, Model::Préhau_pilier_02
-	C: "OO",1565014659824,1565045175056
+	;Geometry::, Model::Préau_pilier_02
+	C: "OO",1835134316784,1835130317664
 	
-	;Geometry::, Model::Préhau_Enter
-	C: "OO",1565014658864,1565045177248
+	;Geometry::, Model::Préau_Enter
+	C: "OO",1835134338384,1835130319856
 	
-	;Geometry::, Model::Préhau_toit
-	C: "OO",1565014679024,1565045179440
+	;Geometry::, Model::Préau_toit
+	C: "OO",1835134323984,1835130348352
 	
-	;Geometry::, Model::Préhau_VFX_Gate
-	C: "OO",1565014682384,1565045153136
+	;Geometry::, Model::Préau_VFX_Gate
+	C: "OO",1835134312464,1835130365888
 }
