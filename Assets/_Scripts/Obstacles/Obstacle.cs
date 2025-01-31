@@ -7,7 +7,7 @@ public class Obstacle : MonoBehaviour
     protected List<Passenger> Passengers;
     public bool IsPlaced { get; private set; }
     [field:SerializeField] public Vector2 Dimensions { get; private set; }
-    [field:SerializeField] public int Cost { get; private set; }
+    [field:SerializeField] public float CatBellCost { get; private set; }
     [field:SerializeField] public float LifeTime { get; private set; }
     private float _lifeTimer;
 
@@ -16,16 +16,6 @@ public class Obstacle : MonoBehaviour
         IsPlaced = false;
         _lifeTimer = LifeTime;
         Passengers = new List<Passenger>();
-    }
-
-    private void OnEnable()
-    {
-        
-    }
-
-    private void OnDisable()
-    {
-        
     }
 
     private void Update()
