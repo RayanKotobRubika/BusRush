@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 72659320}
   - component: {fileID: 72659319}
   m_Layer: 5
-  m_Name: WaterPondObstacleUI
+  m_Name: StopSignObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1034,7 +1034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 7962462066160482468, guid: 348a189e9fe743c4e976d5cd724bf3a3, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 2721684095276187753, guid: d56fc3ec8b6ff2f49937d911437d6a39, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
   <CostText>k__BackingField: {fileID: 48291590}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2611,7 +2611,7 @@ GameObject:
   - component: {fileID: 325915839}
   - component: {fileID: 325915838}
   m_Layer: 5
-  m_Name: SqueakyHammerObstacleUI
+  m_Name: SpringTrapObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2650,7 +2650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 7676029448951723364, guid: 745a57cd8c63b6647bacbc782a80ae29, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 3016380990308706633, guid: c147ab635c8cc59478f5457a50f9a0b1, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a9fab6cd72a067047b176b8f62064aa4, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
   <CostText>k__BackingField: {fileID: 363285381}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -2676,7 +2676,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a9fab6cd72a067047b176b8f62064aa4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3731,7 +3731,7 @@ GameObject:
   - component: {fileID: 614934773}
   - component: {fileID: 614934772}
   m_Layer: 5
-  m_Name: WaterPondObstacleUI
+  m_Name: StopSignObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3770,7 +3770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 3700644609064170710, guid: 3d1c2f0dd9442d641b8f327b84a19a22, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 8677158753684789445, guid: ba85da00e0929ca44adc0153d95da13e, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
   <CostText>k__BackingField: {fileID: 1175887670}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -3796,7 +3796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5590,7 +5590,7 @@ GameObject:
   - component: {fileID: 1041571403}
   - component: {fileID: 1041571402}
   m_Layer: 5
-  m_Name: SqueakyHammerObstacleUI
+  m_Name: SpringTrapObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5629,7 +5629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 3055499499512175319, guid: 159d11dfc829a75418666888074fc7ce, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 7165499010268766768, guid: e215714cb1e1a6e479132efe83d2011c, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a9fab6cd72a067047b176b8f62064aa4, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
   <CostText>k__BackingField: {fileID: 1286119883}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -5655,7 +5655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a9fab6cd72a067047b176b8f62064aa4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6343,7 +6343,7 @@ GameObject:
   - component: {fileID: 1166475208}
   - component: {fileID: 1166475207}
   m_Layer: 5
-  m_Name: WaterPondObstacleUI
+  m_Name: StopSignObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6382,7 +6382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 5303738332828666216, guid: 89fb2b7968dfa364d99c9d7c0fd7ad71, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
   <CostText>k__BackingField: {fileID: 1291887372}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -6408,7 +6408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10435,7 +10435,7 @@ GameObject:
   - component: {fileID: 1933437131}
   - component: {fileID: 1933437130}
   m_Layer: 5
-  m_Name: SqueakyHammerObstacleUI
+  m_Name: SpringTrapObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10474,7 +10474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 1876005871584968990, guid: 0ff0f0f5825f2cb429d14fa9f29b79c4, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a9fab6cd72a067047b176b8f62064aa4, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
   <CostText>k__BackingField: {fileID: 744559167}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -10500,7 +10500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a9fab6cd72a067047b176b8f62064aa4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 5428279886195136768}
   - component: {fileID: 2718352300451658130}
   - component: {fileID: 2990825866401437550}
+  - component: {fileID: 7962462066160482468}
   m_Layer: 0
-  m_Name: RedWaterPondPreview
+  m_Name: RedStopSign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,3 +109,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7962462066160482468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2721684095276187753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078e9598e64823a4a8779126d2726d96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Color>k__BackingField: 0
+  <Dimensions>k__BackingField: {x: 2, y: 2}
+  <CatBellCost>k__BackingField: 30
+  <LifeTime>k__BackingField: 5
