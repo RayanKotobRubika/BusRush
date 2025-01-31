@@ -6,7 +6,7 @@ public class ColoredWall : Obstacle
     {
         if (!other.TryGetComponent(out Passenger passenger)) return;
 
-        if (passenger.Color != Color) Destroy(passenger.gameObject);
+        if (passenger.Color == Color) Destroy(passenger.gameObject);
         
         Passengers.Add(passenger);
     }
