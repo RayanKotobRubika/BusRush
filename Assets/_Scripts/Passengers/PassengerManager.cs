@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -40,8 +39,6 @@ public class PassengerManager : MonoBehaviour
             break;
         }
         
-        Passenger passenger = Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, 
-            Quaternion.identity, _passengerContainer);
-        passenger.Initialize(lane);
+        Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, Quaternion.identity, _passengerContainer);
     }
 }
