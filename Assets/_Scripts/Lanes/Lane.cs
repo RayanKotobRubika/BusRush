@@ -22,7 +22,4 @@ public class Lane : MonoBehaviour
             PassengerSpawnPoints[i-1] = spawnPoints[i];
         }
     }
-
-    
-    
 }
