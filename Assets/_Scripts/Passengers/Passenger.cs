@@ -7,6 +7,7 @@ public class Passenger : MonoBehaviour
     public NavMeshAgent Agent { get; private set; }
     public Rigidbody RB { get; private set; }
     public Collider Coll { get; private set; }
+    public bool IsStopped;
     [field:SerializeField] public Transform Body { get; private set; }
 
     [field:SerializeField] public PassengerColor Color { get; private set; }
@@ -16,6 +17,8 @@ public class Passenger : MonoBehaviour
         Agent = GetComponent<NavMeshAgent>();
         RB = GetComponent<Rigidbody>();
         Coll = GetComponent<Collider>();
+        
+        IsStopped = false;
         
         MovementSpeed = LevelManager.Instance.Data.PassengersMovementSpeed;
 
@@ -31,7 +34,9 @@ public class Passenger : MonoBehaviour
 
     private void Move()
     {
-        Vector3 targetPos = new Vector3(transform.position.x, transform.position.y, LaneManager.Instance.LanesArrivalZ.position.z);
+        Vector3 targetPos = new Vector3();
+        
+        targetPos = IsStopped ? transform.position : new Vector3(transform.position.x, transform.position.y, LaneManager.Instance.LanesArrivalZ.position.z);
         
         Agent.SetDestination(targetPos);
     }
