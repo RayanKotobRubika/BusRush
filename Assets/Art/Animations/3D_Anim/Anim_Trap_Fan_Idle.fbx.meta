@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 417a8be2a3d0d5b4fb177a99565e87b0
+guid: 2e4bfb4c7344a6245a6496c65691a66a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,7 +31,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Trap_Stop
+      name: Trap_Fan_Idle
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 0

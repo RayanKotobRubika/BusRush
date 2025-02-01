@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -3473962834983781253, guid: b1a48eb2bdb1854499804f0a753b1cca, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8c5d73f2d16a1ac47a0b999dc3d10d98, type: 2}
     - target: {fileID: -3132438356435816170, guid: b1a48eb2bdb1854499804f0a753b1cca, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -104,6 +108,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1634508291183815893, guid: b1a48eb2bdb1854499804f0a753b1cca, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 884f5df0fbf265b43bdb5137611bd858, type: 2}
     - target: {fileID: 313424319890822845, guid: b1a48eb2bdb1854499804f0a753b1cca, type: 3}
       propertyPath: m_IsActive
       value: 0

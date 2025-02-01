@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92eea2b4769773642a0752c2087d6fd1
+guid: aa271d2e6f7b25d45b7de89007c7fdde
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,10 +31,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Trap_Fan
+      name: Trap_Spring_Eject
       takeName: Take 001
       internalID: 1827226128182048838
-      firstFrame: 0
+      firstFrame: 1
       lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
@@ -42,7 +42,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
