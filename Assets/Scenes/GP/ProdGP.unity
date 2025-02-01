@@ -2438,12 +2438,12 @@ GameObject:
   - component: {fileID: 312810042}
   - component: {fileID: 312810041}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: CatGroupObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &312810040
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2475,14 +2475,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab23125e5229d34695a13cc03c07b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RelatedObstacle>k__BackingField: {fileID: 0}
-  <ObstaclePreview>k__BackingField: {fileID: 0}
-  <ObstacleSprite>k__BackingField: {fileID: 0}
-  <CostText>k__BackingField: {fileID: 0}
+  <RelatedObstacle>k__BackingField: {fileID: 480697074660701892, guid: 76e8097179d9bea40b402bc809bd9b50, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 1158656107573295135, guid: 3e1b39ef02be5f74182b7b22b1281b19, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
+  <CostText>k__BackingField: {fileID: 880442905}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!114 &312810042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2503,7 +2503,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4948,12 +4948,12 @@ GameObject:
   - component: {fileID: 866922597}
   - component: {fileID: 866922596}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: CatGroupObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &866922595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4985,14 +4985,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab23125e5229d34695a13cc03c07b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RelatedObstacle>k__BackingField: {fileID: 0}
-  <ObstaclePreview>k__BackingField: {fileID: 0}
-  <ObstacleSprite>k__BackingField: {fileID: 0}
-  <CostText>k__BackingField: {fileID: 0}
+  <RelatedObstacle>k__BackingField: {fileID: 179580690573911667, guid: 87e2ed5263dbd08438f8ab151a6a4953, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 1202607884633187965, guid: d4a8aeee37e9a644ba160753fe874708, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
+  <CostText>k__BackingField: {fileID: 167648256}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!114 &866922597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5013,7 +5013,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8017,12 +8017,12 @@ GameObject:
   - component: {fileID: 1419921291}
   - component: {fileID: 1419921290}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: CatGroupObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1419921289
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8054,14 +8054,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab23125e5229d34695a13cc03c07b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RelatedObstacle>k__BackingField: {fileID: 0}
-  <ObstaclePreview>k__BackingField: {fileID: 0}
-  <ObstacleSprite>k__BackingField: {fileID: 0}
-  <CostText>k__BackingField: {fileID: 0}
+  <RelatedObstacle>k__BackingField: {fileID: 4270770301904429195, guid: 3bdfe0b61bd0d514aad5a19f179a89e0, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 4863660603942525855, guid: 38a61c72f41874b41885a87530ad16cc, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
+  <CostText>k__BackingField: {fileID: 1679639543}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!114 &1419921291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8082,7 +8082,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

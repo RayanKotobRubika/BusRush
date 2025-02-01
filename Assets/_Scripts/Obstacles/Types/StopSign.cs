@@ -6,7 +6,7 @@ public class StopSign : Obstacle
     {
         if (!other.TryGetComponent(out Passenger passenger)) return;
 
-        if (passenger.Color == Color) passenger.Agent.speed = 0.0f;
+        if (passenger.Color == Color) passenger.IsStopped = true;
         
         Passengers.Add(passenger);
     }
@@ -15,11 +15,11 @@ public class StopSign : Obstacle
     {
         if (!other.TryGetComponent(out Passenger passenger)) return;
 
-        if (passenger.Color == Color) passenger.Agent.speed = passenger.MovementSpeed;
+        if (passenger.Color == Color) passenger.IsStopped = false;
     }
 
     protected override void KilledObstacle(Passenger passenger)
     {
-        if (passenger.Color == Color) passenger.Agent.speed = passenger.MovementSpeed;
+        if (passenger.Color == Color) passenger.IsStopped = false;
     }
 }
