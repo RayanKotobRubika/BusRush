@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8f531d8660c7f0847b6d54c56986914e
+guid: afc4b5814507dbd4fa85135104850720
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,10 +31,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Trap_Spring
+      name: Trap_Stop_Idle
       takeName: Take 001
       internalID: 1827226128182048838
-      firstFrame: 1
+      firstFrame: 0
       lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
@@ -42,7 +42,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
