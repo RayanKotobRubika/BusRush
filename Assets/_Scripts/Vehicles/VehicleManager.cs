@@ -9,7 +9,6 @@ public class VehicleManager : MonoBehaviour
     
     [SerializeField] private TextMeshProUGUI _displayCapacityText;
     [SerializeField] private Image _capacityTextBackground;
-    private bool _colorUpdated;
 
     [SerializeField] private float _spawnDelay;
     private float _initTimer;
@@ -33,8 +32,6 @@ public class VehicleManager : MonoBehaviour
         } 
         
         Instance = this;
-
-        _colorUpdated = false;
         
         VehicleList = new List<Vehicle>(LevelManager.Instance.Data.VehicleList);
 
@@ -90,7 +87,6 @@ public class VehicleManager : MonoBehaviour
     private void UpdateColor()
     {
         _capacityTextBackground.color = CurrentVehicles[0].GetComponentInChildren<MeshRenderer>().material.color;
-        _colorUpdated = true;
     }
 
     private Vehicle SpawnVehicle()
@@ -121,8 +117,6 @@ public class VehicleManager : MonoBehaviour
 
     private void MoveAllVehicles()
     {
-        _colorUpdated = false;
-        
         for (int i = 0; i < CurrentVehicles.Length; i++)
         {
             if (CurrentVehicles[i] == null) continue;

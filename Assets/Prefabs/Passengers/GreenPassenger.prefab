@@ -58,7 +58,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d737b3be9e000e14fbd82ad213a084bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MovementSpeed>k__BackingField: 2
+  <Body>k__BackingField: {fileID: 5067158185330593413}
   <Color>k__BackingField: 1
 --- !u!1 &3205312120131545667
 GameObject:

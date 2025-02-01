@@ -18,12 +18,6 @@ public class PassengerManager : MonoBehaviour
         
         Instance = this; 
     }
-
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.P))
-            SpawnPassenger(LaneManager.Instance.Lanes[0] , (PassengerColor)Random.Range(0, 3));
-    }
     
     public void SpawnPassenger(Lane lane, PassengerColor color)
     {
