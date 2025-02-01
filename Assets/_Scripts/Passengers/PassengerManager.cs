@@ -35,4 +35,21 @@ public class PassengerManager : MonoBehaviour
         
         Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, Quaternion.identity, _passengerContainer);
     }
+    
+    public void SpawnPassenger(Lane lane, PassengerColor color, Vector3 position)
+    {
+        Passenger passengerPrefab = null;
+        
+        foreach (Passenger p in _passengerPrefabs)
+        {
+            if (p.Color != color) continue;
+
+            passengerPrefab = p;
+            break;
+        }
+        
+        Vector3 spawnPos = position - Vector3.forward * position.z + Vector3.forward * lane.PassengerSpawnPoints[0].position.z;
+        
+        Instantiate(passengerPrefab, spawnPos, Quaternion.identity, _passengerContainer);
+    }
 }
