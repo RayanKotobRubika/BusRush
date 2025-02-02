@@ -42,11 +42,25 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _B_V_ou_R_N: 1
+    - _Bleu_ou_Vert: 0
+    - _Boolean: 0
+    - _Boolean_1: 0
+    - _Boolean_2: 1
+    - _Emissive: 4
+    - _Emissive_On_Off: 1
     - _Fres_Step: 1.3
+    - _Horizontal_Scroll_Speed: -0.24
+    - _Opacity1: 0.1
+    - _Opacity2: 0.8
+    - _Outline_Opacity: 0.5
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _Rouge_ou_Neutre: 1
     - _ScrolSpeed: -0.28
+    - _Scroll_Speed: -0.3
     - _ShadowStep: 0.24
+    - _Vertical_Scroll_Speed: 0.25
     m_Colors:
     - _Color: {r: 0.21857378, g: 0.2735849, b: 0.21551263, a: 0}
     - _Color_1: {r: 0.33963582, g: 0.4433962, b: 0.3241812, a: 0}
