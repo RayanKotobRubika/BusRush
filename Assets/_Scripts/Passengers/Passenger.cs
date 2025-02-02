@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 public class Passenger : MonoBehaviour
 {
@@ -29,7 +31,8 @@ public class Passenger : MonoBehaviour
     {
         if (GameManager.Instance.IsGameOver)
             Stop();
-        Move();
+        if (Agent.enabled == true)
+            Move();
     }
 
     private void Move()

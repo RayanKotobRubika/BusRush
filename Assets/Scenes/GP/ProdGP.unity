@@ -559,12 +559,12 @@ GameObject:
   - component: {fileID: 50083306}
   - component: {fileID: 50083305}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: CoolingFanObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &50083304
 RectTransform:
   m_ObjectHideFlags: 0
@@ -596,14 +596,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab23125e5229d34695a13cc03c07b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RelatedObstacle>k__BackingField: {fileID: 0}
-  <ObstaclePreview>k__BackingField: {fileID: 0}
-  <ObstacleSprite>k__BackingField: {fileID: 0}
-  <CostText>k__BackingField: {fileID: 0}
+  <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: 188f0162382564a418b4782cc315d550, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 5cae8fd319803dc4da393c9a6d7c0f0b, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
+  <CostText>k__BackingField: {fileID: 1623785085}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!114 &50083306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -686,12 +686,12 @@ GameObject:
   - component: {fileID: 58545639}
   - component: {fileID: 58545638}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: CoolingFanObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &58545637
 RectTransform:
   m_ObjectHideFlags: 0
@@ -723,14 +723,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab23125e5229d34695a13cc03c07b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RelatedObstacle>k__BackingField: {fileID: 0}
-  <ObstaclePreview>k__BackingField: {fileID: 0}
-  <ObstacleSprite>k__BackingField: {fileID: 0}
-  <CostText>k__BackingField: {fileID: 0}
+  <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: abb8c4afe08ad4c4faaf72f38246b886, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: c6354feeb95d2df4fbad46cc31ae4edb, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
+  <CostText>k__BackingField: {fileID: 106134144}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!114 &58545639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,7 +751,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2276,12 +2276,12 @@ GameObject:
   - component: {fileID: 257446809}
   - component: {fileID: 257446808}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: CoolingFanObstacleUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &257446807
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2313,14 +2313,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab23125e5229d34695a13cc03c07b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <RelatedObstacle>k__BackingField: {fileID: 0}
-  <ObstaclePreview>k__BackingField: {fileID: 0}
-  <ObstacleSprite>k__BackingField: {fileID: 0}
-  <CostText>k__BackingField: {fileID: 0}
+  <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: 4ca84943a16cb194ab334a3a2aa1d7b6, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
+  <CostText>k__BackingField: {fileID: 192430463}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
 --- !u!114 &257446809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2341,7 +2341,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8703538c4bf4c49a9aed0c6f250daed6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2805,10 +2805,10 @@ Transform:
   - {fileID: 1864690520}
   - {fileID: 1796438499}
   - {fileID: 2118999293}
-  - {fileID: 1539040229}
   - {fileID: 1122637845}
   - {fileID: 213741646}
   - {fileID: 1517381753}
+  - {fileID: 1539040229}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &349196251
@@ -7402,6 +7402,7 @@ Transform:
   - {fileID: 1811842311}
   - {fileID: 38126726}
   - {fileID: 977306797}
+  - {fileID: 1439937154}
   m_Father: {fileID: 281074748}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320722882
@@ -8263,6 +8264,59 @@ MonoBehaviour:
   _redBar: {fileID: 1052037594}
   _greenBar: {fileID: 1571116896}
   _blueBar: {fileID: 1475983924}
+--- !u!1 &1439937153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439937154}
+  - component: {fileID: 1439937155}
+  m_Layer: 0
+  m_Name: BackWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1439937154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439937153}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -12.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1305770792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1439937155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439937153}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14, y: 5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1449020617
 GameObject:
   m_ObjectHideFlags: 0
