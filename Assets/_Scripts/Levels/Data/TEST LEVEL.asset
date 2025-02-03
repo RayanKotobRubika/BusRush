@@ -16,12 +16,12 @@ MonoBehaviour:
   <MaxGreenCapacity>k__BackingField: 30
   <MaxBlueCapacity>k__BackingField: 30
   <VehicleList>k__BackingField:
-  - {fileID: 2246252299524881142, guid: 863f088b98657594dab0533665c7608e, type: 3}
-  - {fileID: 7038607774340483396, guid: 99b330bc6676cb54ea62441ddcb78817, type: 3}
-  - {fileID: 2246252299524881142, guid: 0c4d6b6bf4356d2498e7d4fd993ff8f7, type: 3}
-  - {fileID: 7038607774340483396, guid: 128e475528d582e42b2c899fe5be7b79, type: 3}
-  - {fileID: 3831798318206814679, guid: 4f49e6677e1b555428e2a6e910dac273, type: 3}
-  - {fileID: 3831798318206814679, guid: d367b3d05ec867140bbd7e6f760949e8, type: 3}
+  - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
+  - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
+  - {fileID: 2246252299524881142, guid: 80a19354f0716d94d9d2960aa83f3294, type: 3}
+  - {fileID: 3831798318206814679, guid: 5490565c4a130ba4e9d1486145ec830b, type: 3}
+  - {fileID: 3831798318206814679, guid: 5490565c4a130ba4e9d1486145ec830b, type: 3}
+  - {fileID: 3831798318206814679, guid: 5490565c4a130ba4e9d1486145ec830b, type: 3}
   - {fileID: 8506377958510113920, guid: 2f605046af9327e41a454266a0b7ad73, type: 3}
   - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
   - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}

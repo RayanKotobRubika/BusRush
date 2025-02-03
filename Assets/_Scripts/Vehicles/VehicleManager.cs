@@ -6,9 +6,6 @@ using UnityEngine.UI;
 public class VehicleManager : MonoBehaviour
 {
     public static VehicleManager Instance { get; private set; }
-    
-    [SerializeField] private TextMeshProUGUI _displayCapacityText;
-    [SerializeField] private Image _capacityTextBackground;
 
     [SerializeField] private float _spawnDelay;
     private float _initTimer;
@@ -62,7 +59,6 @@ public class VehicleManager : MonoBehaviour
         }
         
         UpdateText();
-        UpdateColor();
 
         BusIsActive = CurrentVehicles[0].transform.position == VehiclesPositionsPoints[0].position
                       && CurrentVehicles[0].CurrentPassengers < CurrentVehicles[0].Capacity;
@@ -91,12 +87,6 @@ public class VehicleManager : MonoBehaviour
     private void UpdateText()
     {
         _remainingVehiclesText.text = $"Remaining Vehicles : {_remainingVehicles}";
-        _displayCapacityText.text = $"{CurrentVehicles[0].CurrentPassengers} / {CurrentVehicles[0].Capacity}";
-    }
-
-    private void UpdateColor()
-    {
-        _capacityTextBackground.color = CurrentVehicles[0].GetComponentInChildren<MeshRenderer>().material.color;
     }
 
     private Vehicle SpawnVehicle()
