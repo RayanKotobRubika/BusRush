@@ -9967,7 +9967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <GridWidth>k__BackingField: 9
-  <GridHeight>k__BackingField: 13
+  <GridHeight>k__BackingField: 12
   <GridCellSize>k__BackingField: 1.5
   _gridTile: {fileID: 3284644152603102996, guid: 3092610f87a668646853ea8ee2656531, type: 3}
   <ObstacleHeight>k__BackingField: 0.5
