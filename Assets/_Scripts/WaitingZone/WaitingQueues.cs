@@ -43,7 +43,7 @@ public class WaitingQueues : MonoBehaviour
         
         if (!VehicleManager.Instance.BusIsActive) return;
 
-        if (Color != VehicleManager.Instance.CurrentVehicles[0].Color || !VehicleManager.Instance.BusIsActive) return;
+        if ((Color != VehicleManager.Instance.CurrentVehicles[0].Color && !VehicleManager.Instance.CurrentVehicles[0].TakesAllColors)|| !VehicleManager.Instance.BusIsActive) return;
 
         if (_lastActiveVehicle != VehicleManager.Instance.CurrentVehicles[0])
         {
