@@ -1,6 +1,4 @@
-using System;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Vector3 = UnityEngine.Vector3;
@@ -10,6 +8,7 @@ public class ObstacleUI : MonoBehaviour
     [field:SerializeField] public Obstacle RelatedObstacle { get; private set; }
     [field:SerializeField] public GameObject ObstaclePreview { get; private set; }
     [field:SerializeField] public Sprite ObstacleSprite { get; private set; }
+    [field:SerializeField] public TextMeshProUGUI CostText { get; private set; }
     
     private GameObject _obstaclePreview;
     private Camera _mainCamera;
@@ -27,6 +26,7 @@ public class ObstacleUI : MonoBehaviour
     {
         _rectTransform = GetComponent<RectTransform>();
         _image = GetComponent<Image>();
+        _image.sprite = ObstacleSprite;
     }
 
     private void OnEnable()
@@ -44,6 +44,7 @@ public class ObstacleUI : MonoBehaviour
     private void Start()
     {
         _mainCamera = GameManager.Instance.MainCamera;
+        CostText.text = $"{RelatedObstacle.CatBellCost}";
     }
 
     private void Update()
@@ -56,6 +57,8 @@ public class ObstacleUI : MonoBehaviour
 
     public void DragObstaclePreview(Vector2 screenPos, float time)
     {
+        if (CatBellManager.Instance.CatBellAmount < RelatedObstacle.CatBellCost) return;
+        
         RectTransformUtility.ScreenPointToLocalPointInRectangle(_rectTransform, screenPos, _mainCamera, out Vector2 localPoint);
 
         if (!_rectTransform.rect.Contains(localPoint)) return;
@@ -117,6 +120,7 @@ public class ObstacleUI : MonoBehaviour
         if (_isSnapped)
         {
             Instantiate(RelatedObstacle, _obstaclePreview.transform.position, Quaternion.identity, ObstacleManager.Instance.ObstaclesParent);
+            CatBellManager.Instance.PlacedObstacle(RelatedObstacle.CatBellCost);
         }
         Destroy(_obstaclePreview);
         

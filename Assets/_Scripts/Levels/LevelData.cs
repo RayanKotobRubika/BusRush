@@ -13,6 +13,7 @@ public class LevelData : ScriptableObject
     [field:SerializeField] public List<Vehicle> VehicleList { get; private set; }
     
     [Header("Passengers")]
+    [field:SerializeField] public float PassengersMovementSpeed { get; private set; }
     [field:SerializeField] public List<float> PassengersSpawnRatePerBus { get; private set; }
     [field:SerializeField] public List<Vector3> PassengersColorRatesPerBus { get; private set; }
 }
