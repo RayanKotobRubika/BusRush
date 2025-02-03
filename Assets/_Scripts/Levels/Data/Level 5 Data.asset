@@ -10,38 +10,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c05f9e0ebccbb5488b8bf3ffeb705f9, type: 3}
-  m_Name: Level 1 Data
+  m_Name: Level 5 Data
   m_EditorClassIdentifier: 
   <MaxRedCapacity>k__BackingField: 30
   <MaxGreenCapacity>k__BackingField: 30
   <MaxBlueCapacity>k__BackingField: 30
   <VehicleList>k__BackingField:
-  - {fileID: 7038607774340483396, guid: 4a8e52636757e7143866db9113647606, type: 3}
-  - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
-  - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
+  - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
+  - {fileID: 8506377958510113920, guid: 2f605046af9327e41a454266a0b7ad73, type: 3}
+  - {fileID: 7038607774340483396, guid: 128e475528d582e42b2c899fe5be7b79, type: 3}
   - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
   - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
-  - {fileID: 2246252299524881142, guid: 863f088b98657594dab0533665c7608e, type: 3}
-  - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
   - {fileID: 7038607774340483396, guid: 4a8e52636757e7143866db9113647606, type: 3}
-  - {fileID: 3831798318206814679, guid: cc448f37d8cf6f047aa4381e96ff72b4, type: 3}
+  - {fileID: 8506377958510113920, guid: 2f605046af9327e41a454266a0b7ad73, type: 3}
+  - {fileID: 7038607774340483396, guid: 128e475528d582e42b2c899fe5be7b79, type: 3}
+  - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
+  - {fileID: 7038607774340483396, guid: 99b330bc6676cb54ea62441ddcb78817, type: 3}
   <PassengersSpawnRatePerBus>k__BackingField:
-  - 2.5
-  - 2.5
-  - 3.5
-  - 3.5
-  - 5
-  - 5
-  - 4
-  - 8
-  - 8
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
   <PassengersColorRatesPerBus>k__BackingField:
+  - {x: 30, y: 30, z: 40}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   - {x: 50, y: 0, z: 50}
-  - {x: 50, y: 0, z: 50}
-  - {x: 60, y: 0, z: 40}
-  - {x: 50, y: 0, z: 50}
-  - {x: 60, y: 0, z: 40}
-  - {x: 40, y: 0, z: 60}
-  - {x: 50, y: 0, z: 50}
+  - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
