@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -19,7 +20,13 @@ public class FPSCounter : MonoBehaviour
     float                  accum;
     float                  frames;
     float                  timeLeft;
-  
+
+    private void Awake()
+    {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 400;
+    }
+
     void Update()
     {
         timeLeft -= Time.deltaTime;
