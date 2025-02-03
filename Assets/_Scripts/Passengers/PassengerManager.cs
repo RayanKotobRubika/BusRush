@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -18,6 +19,12 @@ public class PassengerManager : MonoBehaviour
         
         Instance = this; 
     }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.P))
+            SpawnPassenger(LaneManager.Instance.Lanes[0] , (PassengerColor)Random.Range(0, 3));
+    }
     
     public void SpawnPassenger(Lane lane, PassengerColor color)
     {
@@ -33,23 +40,8 @@ public class PassengerManager : MonoBehaviour
             break;
         }
         
-        Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, Quaternion.identity, _passengerContainer);
-    }
-    
-    public void SpawnPassenger(Lane lane, PassengerColor color, Vector3 position)
-    {
-        Passenger passengerPrefab = null;
-        
-        foreach (Passenger p in _passengerPrefabs)
-        {
-            if (p.Color != color) continue;
-
-            passengerPrefab = p;
-            break;
-        }
-        
-        Vector3 spawnPos = position - Vector3.forward * position.z + Vector3.forward * lane.PassengerSpawnPoints[0].position.z;
-        
-        Instantiate(passengerPrefab, spawnPos, Quaternion.identity, _passengerContainer);
+        Passenger passenger = Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, 
+            Quaternion.identity, _passengerContainer);
+        passenger.Initialize(lane);
     }
 }
