@@ -23,6 +23,7 @@ MonoBehaviour:
   - {fileID: 2246252299524881142, guid: 80a19354f0716d94d9d2960aa83f3294, type: 3}
   - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
   - {fileID: 7038607774340483396, guid: 99b330bc6676cb54ea62441ddcb78817, type: 3}
+  <PassengersMovementSpeed>k__BackingField: 2
   <PassengersSpawnRatePerBus>k__BackingField:
   - 3
   - 3
