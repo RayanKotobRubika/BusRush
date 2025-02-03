@@ -18,10 +18,14 @@ public class VehicleManager : MonoBehaviour
     [field:SerializeField] public Transform[] VehiclesPositionsPoints { get; private set; }
     [field:SerializeField] public Transform VehicleLastPoint { get; private set; }
     
-    [field:SerializeField] public Vehicle[] CurrentVehicles { get; private set; }
+    public Vehicle[] CurrentVehicles { get; private set; }
     public List<Vehicle> VehicleList { get; private set; }
 
     [SerializeField] private Transform _vehicleHolder;
+
+    [SerializeField] private TextMeshProUGUI _remainingVehiclesText;
+
+    private int _remainingVehicles;
     
     private void Awake()
     {
@@ -34,6 +38,8 @@ public class VehicleManager : MonoBehaviour
         Instance = this;
         
         VehicleList = new List<Vehicle>(LevelManager.Instance.Data.VehicleList);
+
+        _remainingVehicles = VehicleList.Count;
 
         CurrentVehicles = new Vehicle[VehiclesPositionsPoints.Length];
         BusIsActive = false;
@@ -74,13 +80,17 @@ public class VehicleManager : MonoBehaviour
         }
         else
             _initTimer = _spawnDelay;
-        
+
         if (CurrentVehicles[0].CurrentPassengers >= CurrentVehicles[0].Capacity && CurrentVehicles[0] != null)
+        {
             MoveAllVehicles();
+            _remainingVehicles--;
+        }
     }
     
     private void UpdateText()
     {
+        _remainingVehiclesText.text = $"Remaining Vehicles : {_remainingVehicles}";
         _displayCapacityText.text = $"{CurrentVehicles[0].CurrentPassengers} / {CurrentVehicles[0].Capacity}";
     }
 

@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
@@ -7,6 +8,7 @@ public class WaitingQueues : MonoBehaviour
 {
     [field:SerializeField] public PassengerColor Color { get; private set; }
     [SerializeField] private float _vehicleFullingTime;
+    [SerializeField] private TextMeshProUGUI _currentPassengersText;
     private Vehicle _lastActiveVehicle;
     private float _currentCooldown;
     private float _containerTimer;
@@ -26,6 +28,11 @@ public class WaitingQueues : MonoBehaviour
             PassengerColor.Green => LevelManager.Instance.Data.MaxGreenCapacity,
             _ => throw new ArgumentOutOfRangeException()
         };
+    }
+
+    private void Start()
+    {
+        UpdateSlider();
     }
 
     private void Update()
@@ -72,5 +79,6 @@ public class WaitingQueues : MonoBehaviour
     private void UpdateSlider()
     {
         _slider.value = (float)_currentPassengers / _capacity;
+        _currentPassengersText.text = _currentPassengers.ToString();
     }
 }
