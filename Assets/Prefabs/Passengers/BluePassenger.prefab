@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d737b3be9e000e14fbd82ad213a084bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MovementSpeed>k__BackingField: 2
+  <MovementSpeed>k__BackingField: 2.5
   <Color>k__BackingField: 2
 --- !u!1001 &5695268360893253707
 PrefabInstance:
