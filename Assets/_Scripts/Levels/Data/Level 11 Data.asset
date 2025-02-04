@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c05f9e0ebccbb5488b8bf3ffeb705f9, type: 3}
+  m_Name: Level 11 Data
+  m_EditorClassIdentifier: 
+  <MaxRedCapacity>k__BackingField: 30
+  <MaxGreenCapacity>k__BackingField: 30
+  <MaxBlueCapacity>k__BackingField: 30
+  <VehicleList>k__BackingField:
+  - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
+  - {fileID: 7038607774340483396, guid: 128e475528d582e42b2c899fe5be7b79, type: 3}
+  - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
+  - {fileID: 8506377958510113920, guid: 2f605046af9327e41a454266a0b7ad73, type: 3}
+  - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
+  - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
+  - {fileID: 7038607774340483396, guid: 99b330bc6676cb54ea62441ddcb78817, type: 3}
+  <PassengersMovementSpeed>k__BackingField: 2
+  <PassengersSpawnRatePerBus>k__BackingField:
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  <PassengersColorRatesPerBus>k__BackingField:
+  - {x: 40, y: 20, z: 40}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 30, y: 30, z: 40}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
