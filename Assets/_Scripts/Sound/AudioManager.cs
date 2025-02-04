@@ -24,12 +24,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        MusicSource.volume = PlayerPrefs.GetInt("MusicSound", 0);
-        SFXSource.volume = PlayerPrefs.GetInt("SFXVolume", 0);
-    }
-
     public void PlayMusic(string name)
     {
         Sound s = Array.Find(MusicSounds, x => x.Name == name);

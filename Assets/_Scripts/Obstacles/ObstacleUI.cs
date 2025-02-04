@@ -49,10 +49,11 @@ public class ObstacleUI : MonoBehaviour
 
     private void Update()
     {
-        if (_isDragged && _obstaclePreview != null)
-        {
-            SnapPreviewOnGrid();
-        }
+        if (!_isDragged || _obstaclePreview == null) return;
+        
+        SnapPreviewOnGrid();
+
+        _obstaclePreview.SetActive(_isSnapped);
     }
 
     public void DragObstaclePreview(Vector2 screenPos, float time)
@@ -85,7 +86,7 @@ public class ObstacleUI : MonoBehaviour
     {
         Ray ray = _mainCamera.ScreenPointToRay(screenPosition);
         
-        return Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity) ? hit.point : new Vector3();
+        return Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity) ? hit.point : new Vector3(10000,0,0);
     }
 
     private void SnapPreviewOnGrid()
@@ -98,17 +99,27 @@ public class ObstacleUI : MonoBehaviour
             ObstacleManager.Instance.ObstacleHeight, 
             _obstaclePreview.transform.position.z + (-RelatedObstacle.Dimensions.y + 1) / 2 * ObstacleManager.Instance.GridCellSize
             );
+        
+        Vector3 pos2 = new Vector3(
+            _obstaclePreview.transform.position.x + (RelatedObstacle.Dimensions.x - 1) / 2 * ObstacleManager.Instance.GridCellSize, 
+            ObstacleManager.Instance.ObstacleHeight, 
+            _obstaclePreview.transform.position.z + (RelatedObstacle.Dimensions.y - 1) / 2 * ObstacleManager.Instance.GridCellSize
+            );
 
         _isSnapped = false;
 
         Debug.DrawRay(pos1+Vector3.up, Vector3.down, Color.red, 10f);
-        if (!Physics.Raycast(pos1 + Vector3.up, Vector3.down, out RaycastHit hit, 10f, _gridTileLayer)) return;
+        if (!Physics.Raycast(pos1 + Vector3.up, Vector3.down, out RaycastHit hit1, 10f, _gridTileLayer)) return;
+        
+        
+        Debug.DrawRay(pos2+Vector3.up, Vector3.down, Color.green, 10f);
+        if (!Physics.Raycast(pos2 + Vector3.up, Vector3.down, out RaycastHit hit2, 10f, _gridTileLayer)) return;
         
         
         _obstaclePreview.transform.position = new Vector3(
-            hit.transform.position.x + (RelatedObstacle.Dimensions.x - 1) / 2 * ObstacleManager.Instance.GridCellSize,
+            hit1.transform.position.x + (RelatedObstacle.Dimensions.x - 1) / 2 * ObstacleManager.Instance.GridCellSize,
             ObstacleManager.Instance.ObstacleHeight, 
-            hit.transform.position.z + (RelatedObstacle.Dimensions.y - 1) / 2 * ObstacleManager.Instance.GridCellSize
+            hit1.transform.position.z + (RelatedObstacle.Dimensions.y - 1) / 2 * ObstacleManager.Instance.GridCellSize
             );
         
         _isSnapped = true;

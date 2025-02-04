@@ -46,4 +46,21 @@ public static class CoroutineUtils
 
         target.position = targetPosition;
     }
+    
+    public static IEnumerator EaseInOutMoveUI(RectTransform target, Vector3 targetPosition, float duration)
+    {
+        Vector3 startPosition = target.anchoredPosition;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / duration);
+            t = Mathf.SmoothStep(0, 1, t);
+            target.anchoredPosition = Vector3.Lerp(startPosition, targetPosition, t);
+            yield return null;
+        }
+
+        target.anchoredPosition = targetPosition;
+    }
 }
