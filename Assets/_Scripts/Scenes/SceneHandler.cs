@@ -49,7 +49,7 @@ public class SceneHandler : MonoBehaviour
 
         do
         {
-            _progressBar.value = scene.progress;
+            _progressBar.value = scene.progress * 0.01f;
         } while (scene.progress < 0.9f);
         
         //_progressBar.gameObject.SetActive(false);
