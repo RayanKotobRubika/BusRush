@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_TerrainRessort
+  m_Name: M_TerrainRessort 2
   m_Shader: {fileID: -6465566751694194690, guid: 13329d074ab94644f98199bd9ba22ffe, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -55,13 +55,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Emissive: 2.32
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 0.25
+    - _Scale: 0.168
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0}
-    - _Color01: {r: 0.5, g: 0.2240566, b: 0.2240566, a: 1}
-    - _Color02: {r: 0.5471698, g: 0.26067996, b: 0.26067996, a: 1}
+    - _Color01: {r: 0, g: 0.56325066, b: 0.6981132, a: 1}
+    - _Color02: {r: 0, g: 0.6901961, b: 0.9607844, a: 1}
     - _Color_1: {r: 0, g: 0, b: 0, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}

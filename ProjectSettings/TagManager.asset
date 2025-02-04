@@ -14,7 +14,7 @@ TagManager:
   - Passanger
   - Background
   - GridTile
-  - 
+  - RenderProps (uniquement pour render de props)
   - 
   - 
   - 
