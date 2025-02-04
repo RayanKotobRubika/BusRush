@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[DefaultExecutionOrder(-3)]
 public class SceneHandler : MonoBehaviour
 {
     public static SceneHandler Instance { get; private set; }
@@ -12,6 +13,9 @@ public class SceneHandler : MonoBehaviour
     [SerializeField] private float _transitionTime = 1f;
     
     [SerializeField] private Slider _progressBar;
+
+    [field:SerializeField] public List<LevelData> Levels { get; private set; }
+    private int _currentLevel;
     
     private void Awake()
     {
@@ -19,24 +23,36 @@ public class SceneHandler : MonoBehaviour
         { 
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            return;
-        } 
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         
-        Destroy(gameObject);
+        if (PlayerPrefs.HasKey("CurrentLevel"))
+        {
+            _currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("CurrentLevel", 1);
+            PlayerPrefs.Save();
+            _currentLevel = 1;
+        }
     }
 
     public async void LoadScene(string sceneName)
     {
         var scene = SceneManager.LoadSceneAsync(sceneName);
         scene.allowSceneActivation = false;
-        _progressBar.gameObject.SetActive(true);
+        //_progressBar.gameObject.SetActive(true);
 
         do
         {
-            _progressBar.value = scene.progress;
+            _progressBar.value = scene.progress * 0.01f;
         } while (scene.progress < 0.9f);
         
-        _progressBar.gameObject.SetActive(false);
+        //_progressBar.gameObject.SetActive(false);
         
         scene.allowSceneActivation = true;
 
@@ -59,5 +75,10 @@ public class SceneHandler : MonoBehaviour
         yield return new WaitForSeconds(_transitionTime);
 
         LevelManager.Instance.ReadyToPlay = true;
+    }
+
+    public LevelData GetCurrentLevelData()
+    {
+        return Levels[PlayerPrefs.GetInt("CurrentLevel", 1) - 1];
     }
 }
