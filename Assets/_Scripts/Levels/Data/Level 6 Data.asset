@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05f9e0ebccbb5488b8bf3ffeb705f9, type: 3}
   m_Name: Level 6 Data
   m_EditorClassIdentifier: 
+  <LevelIndex>k__BackingField: 6
   <MaxRedCapacity>k__BackingField: 30
   <MaxGreenCapacity>k__BackingField: 30
   <MaxBlueCapacity>k__BackingField: 30
+  <DefaultRedCapacity>k__BackingField: 0
+  <DefaultGreenCapacity>k__BackingField: 0
+  <DefaultBlueCapacity>k__BackingField: 0
   <VehicleList>k__BackingField:
   - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
   - {fileID: 7038607774340483396, guid: 128e475528d582e42b2c899fe5be7b79, type: 3}

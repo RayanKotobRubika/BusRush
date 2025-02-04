@@ -48,6 +48,16 @@ MonoBehaviour:
   _animator: {fileID: 3536396287249941581}
   _transitionTime: 1
   _progressBar: {fileID: 5408817284431009985}
+  <Levels>k__BackingField:
+  - {fileID: 11400000, guid: 4f6d3a0f7b6dcf64d94ab450ce707a35, type: 2}
+  - {fileID: 11400000, guid: 0a57f7fd1ee7951468fa85667894c5fc, type: 2}
+  - {fileID: 11400000, guid: d160cf3193ec00542ab219dfeff4ab97, type: 2}
+  - {fileID: 11400000, guid: bcb5220e4d85e72459549093487461bf, type: 2}
+  - {fileID: 11400000, guid: 51949611a1459524ab4639cd638b90a2, type: 2}
+  - {fileID: 11400000, guid: 20a08e47cecb1484caa7f24105b3ab8b, type: 2}
+  - {fileID: 11400000, guid: 20600e2263bec31419c45e506e89253a, type: 2}
+  - {fileID: 11400000, guid: b438f186fd42414468c9f443b6bd1950, type: 2}
+  - {fileID: 11400000, guid: 90e55eb5cfb85244c8b0973c5bbabba0, type: 2}
 --- !u!1 &1678805732132292387
 GameObject:
   m_ObjectHideFlags: 0

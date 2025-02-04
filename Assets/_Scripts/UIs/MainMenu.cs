@@ -19,21 +19,10 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _levelText;
 
-    private int _currentLevel;
-
     public void Start()
     {
-        if (PlayerPrefs.HasKey("Level"))
-        {
-            _currentLevel = PlayerPrefs.GetInt("Level", 1);
-        }
-        else
-        {
-            PlayerPrefs.SetInt("Level", 1);
-            PlayerPrefs.Save();
-        }
-
-        _levelText.text = "LEVEL " + _currentLevel.ToString();
+        
+        _levelText.text = "LEVEL " + SceneHandler.Instance.GetCurrentLevelData().LevelIndex;
     }
 
     public void OpenSettings()

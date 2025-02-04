@@ -8,7 +8,10 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
     
-    [SerializeField] public LevelData Data;
+    public LevelData Data { get; private set; }
+
+    [SerializeField] private int _forceSceneNumber;
+    [SerializeField] private TextMeshProUGUI _levelNumberText;
     
     [SerializeField] private int _timeBeforeStart = 5;
     private int _timerIntCounter;
@@ -41,6 +44,15 @@ public class LevelManager : MonoBehaviour
         Instance = this;
 
         _timerIntCounter = _timeBeforeStart;
+        
+        Data = _forceSceneNumber == 0 ? 
+            SceneHandler.Instance.GetCurrentLevelData():           
+            SceneHandler.Instance.Levels[_forceSceneNumber - 1];
+    }
+
+    private void Start()
+    {
+        _levelNumberText.text = "Level " + Data.LevelIndex;
     }
 
     private void Update()

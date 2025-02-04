@@ -63,4 +63,60 @@ public static class CoroutineUtils
 
         target.anchoredPosition = targetPosition;
     }
+
+    public static IEnumerator ScaleToTarget(Transform target, float targetScale, float scaleOverdrive, float scaleCut, float duration)
+    {
+        Vector3 startingScale = target.localScale;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration * scaleCut)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / duration);
+            t = Mathf.SmoothStep(0, 1, t);
+            target.localScale = Vector3.Lerp(startingScale, Vector3.one * scaleOverdrive, t);
+            yield return null;
+        }
+        
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / duration);
+            t = Mathf.SmoothStep(0, 1, t);
+            target.localScale = Vector3.Lerp(startingScale, Vector3.one * targetScale, t);
+            yield return null;
+        }
+
+        target.localScale = targetScale * Vector3.one;
+    }
+
+    public static IEnumerator FadeInCanvaGroup(CanvasGroup target, float duration)
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / duration);
+            target.alpha = Mathf.Lerp(0, 1, t);
+            yield return null;
+        }
+
+        target.alpha = 1;
+    }
+    
+    public static IEnumerator FadeOutCanvaGroup(CanvasGroup target, float duration)
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsedTime / duration);
+            target.alpha = Mathf.Lerp(1, 0, t);
+            yield return null;
+        }
+
+        target.alpha = 0;
+    }
 }
