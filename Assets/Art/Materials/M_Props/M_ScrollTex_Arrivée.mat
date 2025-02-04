@@ -66,8 +66,9 @@ Material:
     - _Color_1: {r: 0.33963582, g: 0.4433962, b: 0.3241812, a: 0}
     - _Dark_color: {r: 0.990566, g: 0.5934051, b: 0.5934051, a: 0}
     - _Emissive_Color: {r: 1, g: 0.7608308, b: 0.24056602, a: 0}
+    - _Offset: {r: 0, g: 0.7, b: 0, a: 0}
     - _OutlineColor: {r: 0, g: 0.28356928, b: 0.7735849, a: 1}
-    - _Tiling: {r: 2.91, g: 7.37, b: 0, a: 0}
+    - _Tiling: {r: 3.47, g: 4.48, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &235699031736915751

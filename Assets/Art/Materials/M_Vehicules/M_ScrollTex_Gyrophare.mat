@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_ScrollTex_Tapis
+  m_Name: M_ScrollTex_Gyrophare
   m_Shader: {fileID: -6465566751694194690, guid: d284e06379c9a5248a8fc52b8a32e0e6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -42,18 +42,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _B_V_ou_R_N: 1
-    - _Bleu_ou_Vert: 1
+    - _B_V_ou_R_N: 0
+    - _Bleu_ou_Vert: 0
     - _Boolean: 0
     - _Boolean_1: 0
     - _Boolean_2: 1
-    - _Emissive: 4
+    - _Emissive: 1000
     - _Emissive_On_Off: 1
     - _Fres_Step: 1.13
-    - _Horizontal_Scroll_Speed: -0.24
+    - _Horizontal_Scroll_Speed: 0.3
     - _Opacity1: 0.1
     - _Opacity2: 1
-    - _Outline_Opacity: 1
+    - _Outline_Opacity: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Rouge_ou_Neutre: 1
@@ -65,7 +65,7 @@ Material:
     - _Color: {r: 0.21857378, g: 0.2735849, b: 0.21551263, a: 0}
     - _Color_1: {r: 0.33963582, g: 0.4433962, b: 0.3241812, a: 0}
     - _Dark_color: {r: 0.990566, g: 0.5934051, b: 0.5934051, a: 0}
-    - _Emissive_Color: {r: 1, g: 0.501811, b: 0, a: 0}
+    - _Emissive_Color: {r: 1, g: 0.14288326, b: 0, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _OutlineColor: {r: 0, g: 0.28356928, b: 0.7735849, a: 1}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}

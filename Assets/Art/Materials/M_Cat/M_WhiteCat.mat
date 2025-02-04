@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_TempWhiteVehicule 1
+  m_Name: M_WhiteCat
   m_Shader: {fileID: -6465566751694194690, guid: d284e06379c9a5248a8fc52b8a32e0e6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -38,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Albedo:
-        m_Texture: {fileID: 2800000, guid: 2f3f8fbcd5481ca43a7bbd9a87f63b35, type: 3}
+        m_Texture: {fileID: 2800000, guid: c1dae6d4fd88ce7409f2c578488baba6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -105,7 +105,7 @@ Material:
     - _B_V_ou_R_N: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _Bleu_ou_Vert: 0
+    - _Bleu_ou_Vert: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -115,7 +115,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
-    - _Emissive: 5
+    - _Emissive: 30
     - _Emissive_On_Off: 1
     - _EnvironmentReflections: 1
     - _Fres_Step: 1
@@ -143,15 +143,16 @@ Material:
     - _Vertical_Scroll_Speed: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _double_ombre: 1
     m_Colors:
     - _BaseColor: {r: 0.05513528, g: 0.5566038, b: 0.13357821, a: 1}
-    - _Color: {r: 0.56078434, g: 0.8196079, b: 0.30980393, a: 1}
-    - _Dark_color: {r: 0.4012104, g: 0.5192239, b: 0.5283019, a: 0}
+    - _Color: {r: 0.38781595, g: 0.7654109, b: 0.7830189, a: 1}
+    - _Dark_color: {r: 0.39607844, g: 0.67058825, b: 0.6592595, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Emissive_Color: {r: 1, g: 0.4703848, b: 0.0047169924, a: 0}
-    - _Fres_color: {r: 0.2507983, g: 0.509434, b: 0, a: 1}
+    - _Emissive_Color: {r: 0.078431375, g: 0.52156866, b: 0.7294118, a: 0}
+    - _Fres_color: {r: 0, g: 0.28356925, b: 0.7735849, a: 1}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _OutlineColor: {r: 0.754717, g: 0.3097188, b: 0.3097188, a: 1}
+    - _OutlineColor: {r: 0.48841527, g: 0, b: 0.77254903, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
