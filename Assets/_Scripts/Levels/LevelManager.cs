@@ -1,3 +1,5 @@
+using System;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -7,12 +9,26 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance;
     
     [SerializeField] public LevelData Data;
+    
+    [SerializeField] private int _timeBeforeStart = 5;
+    private int _timerIntCounter;
+    private float _timerBeforeStart;
+
+    [SerializeField] private GameObject _countdownPanel;
+    [SerializeField] private TextMeshProUGUI _countdownText;
+    [SerializeField] private float _slideDuration;
+    [SerializeField] private float _bouncyScale;
+    [SerializeField] private float _bounceDuration;
 
     private float _currentRate;
     private float _spawnTimer;
     private Vector3 _currentOdds;
 
     private int _busCounter = 0;
+
+    public bool ReadyToPlay = false;
+    private bool _started = false;
+    private bool _countDownEnded = false;
     
     private void Awake()
     {
@@ -22,19 +38,53 @@ public class LevelManager : MonoBehaviour
             return;
         } 
         
-        Instance = this; 
-    }
+        Instance = this;
 
-    private void Start()
-    {
-        _currentRate = Data.PassengersSpawnRatePerBus[_busCounter];
-        _currentOdds = Data.PassengersColorRatesPerBus[_busCounter];
-
-        _spawnTimer = 1 / _currentRate;
+        _timerIntCounter = _timeBeforeStart;
     }
 
     private void Update()
     {
+        if (!ReadyToPlay) return;
+
+        if (ReadyToPlay && !_started)
+        {
+            _started = true;
+            
+            _currentRate = Data.PassengersSpawnRatePerBus[_busCounter];
+            _currentOdds = Data.PassengersColorRatesPerBus[_busCounter];
+
+            _spawnTimer = 1 / _currentRate;
+        }
+
+        if (!_countDownEnded)
+        {
+            if (_timerIntCounter == _timeBeforeStart) 
+                SlideCountdownText();
+
+            if (_timerIntCounter > 0)
+            {
+                _timerBeforeStart -= Time.deltaTime;
+
+                if (!(_timerBeforeStart <= 0)) return;
+                
+                _timerIntCounter--;
+                _timerBeforeStart++;
+
+                if (_timerIntCounter > 4) return;
+                
+                StartCoroutine(CoroutineUtils.BouncyScale(_countdownText.rectTransform, _bouncyScale, _bounceDuration));
+                _countdownText.text = _timerIntCounter == 1 ? "GO !" : (_timerIntCounter - 1).ToString();
+
+                return;
+            }
+
+            _countdownPanel.SetActive(false);
+            _countDownEnded = true;
+
+            return;
+        }
+        
         _spawnTimer -= Time.deltaTime;
 
         if (_spawnTimer > 0) return;
@@ -61,5 +111,10 @@ public class LevelManager : MonoBehaviour
         if (Data.PassengersColorRatesPerBus[_busCounter] != Vector3.zero)
             _currentOdds = Data.PassengersColorRatesPerBus[_busCounter];
         _busCounter++;
+    }
+
+    public void SlideCountdownText()
+    {
+        StartCoroutine(CoroutineUtils.EaseInOutMoveUI(_countdownText.rectTransform, Vector2.zero, _slideDuration));
     }
 }
