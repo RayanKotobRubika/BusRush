@@ -193,7 +193,7 @@
                 "m_Node": {
                     "m_Id": "ca7a7f3b8c4e4c6c92e78b66664712ea"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 6
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -724,7 +724,7 @@
     "m_ShaderOutputName": "A",
     "m_StageCapability": 3,
     "m_Value": {
-        "e00": -1.0,
+        "e00": -0.07999999821186066,
         "e01": 0.0,
         "e02": 0.0,
         "e03": 0.0,
@@ -1594,7 +1594,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"475edd947cb3da140a44163923d07b4e\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"70f04ea721ee45f49be8bf6836c5eae4\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -1613,7 +1613,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Y",
     "m_StageCapability": 3,
-    "m_Value": 16.0,
+    "m_Value": 1.0,
     "m_DefaultValue": 0.0,
     "m_Labels": [
         "Y"
@@ -1684,7 +1684,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "X",
     "m_StageCapability": 3,
-    "m_Value": 9.0,
+    "m_Value": 1.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
 }
