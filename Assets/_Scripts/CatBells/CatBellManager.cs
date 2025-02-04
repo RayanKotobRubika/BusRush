@@ -39,7 +39,7 @@ public class CatBellManager : MonoBehaviour
 
     private void UpdateSliderAndValue()
     {
-        _debugText.text = $"{CatBellAmount}";
+        _debugText.text = $"{Mathf.RoundToInt(CatBellAmount)}";
         CatBellAmount += Time.deltaTime * _catBellRechargeRate;
         _catBellBar.value = CatBellAmount * 0.01f;
     }

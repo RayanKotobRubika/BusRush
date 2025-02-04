@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
@@ -7,6 +8,7 @@ public class WaitingQueues : MonoBehaviour
 {
     [field:SerializeField] public PassengerColor Color { get; private set; }
     [SerializeField] private float _vehicleFullingTime;
+    [SerializeField] private TextMeshProUGUI _currentPassengersText;
     private Vehicle _lastActiveVehicle;
     private float _currentCooldown;
     private float _containerTimer;
@@ -28,6 +30,11 @@ public class WaitingQueues : MonoBehaviour
         };
     }
 
+    private void Start()
+    {
+        UpdateSlider();
+    }
+
     private void Update()
     {
         if (_currentPassengers >= _capacity && VehicleManager.Instance.CurrentVehicles[0] != null &&  VehicleManager.Instance.CurrentVehicles[0].Color != Color &&
@@ -36,7 +43,7 @@ public class WaitingQueues : MonoBehaviour
         
         if (!VehicleManager.Instance.BusIsActive) return;
 
-        if (Color != VehicleManager.Instance.CurrentVehicles[0].Color || !VehicleManager.Instance.BusIsActive) return;
+        if ((Color != VehicleManager.Instance.CurrentVehicles[0].Color && !VehicleManager.Instance.CurrentVehicles[0].TakesAllColors)|| !VehicleManager.Instance.BusIsActive) return;
 
         if (_lastActiveVehicle != VehicleManager.Instance.CurrentVehicles[0])
         {
@@ -72,5 +79,6 @@ public class WaitingQueues : MonoBehaviour
     private void UpdateSlider()
     {
         _slider.value = (float)_currentPassengers / _capacity;
+        _currentPassengersText.text = _currentPassengers.ToString();
     }
 }

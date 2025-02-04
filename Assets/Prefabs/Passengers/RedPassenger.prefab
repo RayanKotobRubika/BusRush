@@ -120,7 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d737b3be9e000e14fbd82ad213a084bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MovementSpeed>k__BackingField: 3
+  IsStopped: 0
+  <Body>k__BackingField: {fileID: 4326771015286063648}
   <Color>k__BackingField: 0
 --- !u!1 &6291254268724500279
 GameObject:
