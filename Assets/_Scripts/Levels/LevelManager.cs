@@ -7,12 +7,18 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance;
     
     [SerializeField] public LevelData Data;
+    
+    [SerializeField] private float _timeBeforeStart;
 
     private float _currentRate;
     private float _spawnTimer;
     private Vector3 _currentOdds;
 
     private int _busCounter = 0;
+
+    public bool ReadyToPlay = false;
+    private bool _started = false;
+    private bool _countDownEnded = false;
     
     private void Awake()
     {
@@ -25,16 +31,30 @@ public class LevelManager : MonoBehaviour
         Instance = this; 
     }
 
-    private void Start()
-    {
-        _currentRate = Data.PassengersSpawnRatePerBus[_busCounter];
-        _currentOdds = Data.PassengersColorRatesPerBus[_busCounter];
-
-        _spawnTimer = 1 / _currentRate;
-    }
-
     private void Update()
     {
+        if (!ReadyToPlay) return;
+
+        if (ReadyToPlay && !_started)
+        {
+            _started = true;
+            
+            _currentRate = Data.PassengersSpawnRatePerBus[_busCounter];
+            _currentOdds = Data.PassengersColorRatesPerBus[_busCounter];
+
+            _spawnTimer = 1 / _currentRate;
+        }
+
+        if (!_countDownEnded)
+        {
+            _timeBeforeStart -= Time.deltaTime;
+            
+            if (_timeBeforeStart < 0)
+                _countDownEnded = true;
+
+            return;
+        }
+        
         _spawnTimer -= Time.deltaTime;
 
         if (_spawnTimer > 0) return;

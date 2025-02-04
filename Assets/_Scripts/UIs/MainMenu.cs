@@ -33,7 +33,7 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.Save();
         }
 
-        _levelText.text = _currentLevel.ToString();
+        _levelText.text = "LEVEL " + _currentLevel.ToString();
     }
 
     public void OpenSettings()
