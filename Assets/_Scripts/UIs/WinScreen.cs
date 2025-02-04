@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class WinScreen : MonoBehaviour
@@ -8,6 +9,7 @@ public class WinScreen : MonoBehaviour
     
     [SerializeField] private GameObject _youWin;
     [SerializeField] private GameObject _rewards;
+    [SerializeField] private TextMeshProUGUI _goNextText;
 
     [SerializeField] private float _targetScale;
     [SerializeField] private float _scaleOverdrive;
@@ -27,6 +29,7 @@ public class WinScreen : MonoBehaviour
             _scaleDuration));
         
         _lockInputTimer = _lockInputTime;
+        _goNextText.gameObject.SetActive(false);
     }
 
     private void OnDisable()
@@ -44,5 +47,8 @@ public class WinScreen : MonoBehaviour
     private void Update()
     {
         _lockInputTimer -= Time.deltaTime;
+        
+        if (_lockInputTimer < 0 && !_goNextText.gameObject.activeInHierarchy)
+            _goNextText.gameObject.SetActive(true);
     }
 }

@@ -7314,9 +7314,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4009c112f8853a4097a8617dbd2cfa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lockInputTime: 5
+  _lockInputTime: 1.5
   _youWin: {fileID: 2098980307}
   _rewards: {fileID: 1370679412}
+  _goNextText: {fileID: 917356372}
   _targetScale: 1
   _scaleOverdrive: 1.1
   _scaleCut: 0.9
@@ -10070,9 +10071,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4009c112f8853a4097a8617dbd2cfa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lockInputTime: 5
+  _lockInputTime: 1.5
   _youWin: {fileID: 793006902}
   _rewards: {fileID: 35056651}
+  _goNextText: {fileID: 158158596}
   _targetScale: 1
   _scaleOverdrive: 1.1
   _scaleCut: 0.9
