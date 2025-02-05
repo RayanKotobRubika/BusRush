@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 4270770301904429195, guid: 3bdfe0b61bd0d514aad5a19f179a89e0, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 4863660603942525855, guid: 38a61c72f41874b41885a87530ad16cc, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
   <CostText>k__BackingField: {fileID: 708769341}
   DragOffset: {x: 0, y: 0, z: 0}
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 480697074660701892, guid: 76e8097179d9bea40b402bc809bd9b50, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 1158656107573295135, guid: 3e1b39ef02be5f74182b7b22b1281b19, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
   <CostText>k__BackingField: {fileID: 1939879012}
   DragOffset: {x: 0, y: 0, z: 0}
@@ -688,6 +688,8 @@ MonoBehaviour:
   - {fileID: 933262616}
   - {fileID: 351776049}
   <VehicleLastPoint>k__BackingField: {fileID: 358236528}
+  <CurrentVehicles>k__BackingField: []
+  <VehicleList>k__BackingField: []
   _vehicleHolder: {fileID: 1954952143}
   _remainingVehiclesText: {fileID: 170489083}
 --- !u!1 &158158594
@@ -5338,7 +5340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: abb8c4afe08ad4c4faaf72f38246b886, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: c6354feeb95d2df4fbad46cc31ae4edb, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 1042653282, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 2133722457}
   DragOffset: {x: 0, y: 0, z: 0}
@@ -6458,7 +6460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 179580690573911667, guid: 87e2ed5263dbd08438f8ab151a6a4953, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 1202607884633187965, guid: d4a8aeee37e9a644ba160753fe874708, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
   <CostText>k__BackingField: {fileID: 1465710664}
   DragOffset: {x: 0, y: 0, z: 0}
@@ -11160,7 +11162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: 188f0162382564a418b4782cc315d550, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 5cae8fd319803dc4da393c9a6d7c0f0b, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 1258242896, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 433461453}
   DragOffset: {x: 0, y: 0, z: 0}

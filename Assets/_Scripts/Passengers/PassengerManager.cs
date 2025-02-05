@@ -33,7 +33,8 @@ public class PassengerManager : MonoBehaviour
             break;
         }
         
-        Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, Quaternion.identity, _passengerContainer);
+        Passenger passenger = Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, Quaternion.identity, _passengerContainer);
+        StartCoroutine(CoroutineUtils.ScaleToTarget(passenger.transform, 1f, 1.1f, 0.9f, 0.2f));
     }
     
     public void SpawnPassenger(Lane lane, PassengerColor color, Vector3 position)
@@ -48,8 +49,7 @@ public class PassengerManager : MonoBehaviour
             break;
         }
         
-        Vector3 spawnPos = position - Vector3.forward * position.z + Vector3.forward * lane.PassengerSpawnPoints[0].position.z;
-        
-        Instantiate(passengerPrefab, spawnPos, Quaternion.identity, _passengerContainer);
+        Passenger passenger = Instantiate(passengerPrefab, position, Quaternion.identity, _passengerContainer);
+        StartCoroutine(CoroutineUtils.ScaleToTarget(passenger.transform, 1f, 1.1f, 0.9f, 0.2f));
     }
 }
