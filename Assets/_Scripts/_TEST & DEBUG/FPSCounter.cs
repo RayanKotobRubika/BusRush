@@ -50,7 +50,8 @@ public class FPSCounter : MonoBehaviour
                 text.color = goodColor;
             }
 
-            text.text = fps.ToString("f1");
+            float displayFps =  Mathf.Clamp(fps, 0, 60);
+            text.text = displayFps.ToString("f1");
             timeLeft  = updateInterval;
             accum     = 0;
             frames    = 0;
