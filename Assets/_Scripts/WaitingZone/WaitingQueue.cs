@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 
-public class WaitingQueues : MonoBehaviour
+public class WaitingQueue : MonoBehaviour
 {
     [field:SerializeField] public PassengerColor Color { get; private set; }
     [SerializeField] private float _vehicleFullingTime;
     [SerializeField] private TextMeshProUGUI _currentPassengersText;
+    [SerializeField] private PlusText _plusText;
     private Vehicle _lastActiveVehicle;
     private float _currentCooldown;
     private float _containerTimer;
@@ -68,6 +69,9 @@ public class WaitingQueues : MonoBehaviour
     {
         _currentPassengers++;
         UpdateSlider();
+        if (!_plusText.gameObject.activeInHierarchy)
+            _plusText.gameObject.SetActive(true);
+        _plusText.AddPassenger();
     }
 
     private void RemovePassenger()
@@ -81,4 +85,5 @@ public class WaitingQueues : MonoBehaviour
         _slider.value = (float)_currentPassengers / _capacity;
         _currentPassengersText.text = _currentPassengers.ToString();
     }
+    
 }

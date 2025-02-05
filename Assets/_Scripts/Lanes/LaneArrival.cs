@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class LaneArrival : MonoBehaviour
 {
-    [SerializeField] private WaitingQueues[] _sliders;
+    [SerializeField] private WaitingQueue[] _sliders;
 
     private void OnTriggerEnter(Collider other)
     {
         if (!other.TryGetComponent(out Passenger passenger)) return;
     
-        foreach (WaitingQueues slider in _sliders)
+        foreach (WaitingQueue slider in _sliders)
         {
             if (passenger.Color != slider.Color) continue;
             
