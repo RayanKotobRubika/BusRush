@@ -6,8 +6,9 @@ public class GameManager : MonoBehaviour
     
     [field:SerializeField] public Camera MainCamera { get; private set; }
     
-    [field:SerializeField] public GameObject WinScreen { get; private set; }
-    [field:SerializeField] public GameObject LoseScreen { get; private set; }
+    [SerializeField] private GameObject _winScreen;
+    [SerializeField] private GameObject _loseScreen;
+    [SerializeField] private GameObject _pauseMenu;
 
     [SerializeField] private float _bouncyScale;
     [SerializeField] private float _bounceDuration;
@@ -50,16 +51,21 @@ public class GameManager : MonoBehaviour
         ShowLoseScreen();
     }
 
+    public void PauseGame()
+    {
+        _pauseMenu.SetActive(true);
+    }
+
     private void ShowWinScreen()
     {
-        WinScreen.SetActive(true);
+        _winScreen.SetActive(true);
         
         Debug.Log("LEVEL COMPLETED !");
     }
 
     private void ShowLoseScreen()
     {
-        LoseScreen.SetActive(true);
+        _loseScreen.SetActive(true);
         
         Debug.Log("LEVEL FAILED !");
     }
