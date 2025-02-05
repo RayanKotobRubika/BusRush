@@ -15,8 +15,8 @@ public class VehicleManager : MonoBehaviour
     [field:SerializeField] public Transform[] VehiclesPositionsPoints { get; private set; }
     [field:SerializeField] public Transform VehicleLastPoint { get; private set; }
     
-    public Vehicle[] CurrentVehicles { get; private set; }
-    public List<Vehicle> VehicleList { get; private set; }
+    [field:SerializeField] public Vehicle[] CurrentVehicles { get; private set; }
+    [field:SerializeField] public List<Vehicle> VehicleList { get; private set; }
 
     [SerializeField] private Transform _vehicleHolder;
 
