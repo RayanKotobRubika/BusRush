@@ -33,6 +33,8 @@ public class ObstacleUI : MonoBehaviour
     {
         InputManager.Instance.OnStartHold += DragObstaclePreview;
         InputManager.Instance.OnEndHold += DropObstaclePreview;
+
+        StartCoroutine(CoroutineUtils.BouncyScale(transform, 1.15f, 0.15f));
     }
 
     private void OnDisable()
