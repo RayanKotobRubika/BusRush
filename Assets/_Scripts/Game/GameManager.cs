@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     
     [field:SerializeField] public GameObject WinScreen { get; private set; }
     [field:SerializeField] public GameObject LoseScreen { get; private set; }
+
+    [SerializeField] private float _bouncyScale;
+    [SerializeField] private float _bounceDuration;
     
     public bool IsGameOver { get; private set; }
 
@@ -22,6 +25,12 @@ public class GameManager : MonoBehaviour
         Instance = this;
 
         IsGameOver = false;
+    }
+    
+    public void BounceButton(Transform buttonTransform)
+    {
+        StopAllCoroutines();
+        StartCoroutine(CoroutineUtils.BouncyScale(buttonTransform, _bouncyScale, _bounceDuration));
     }
 
     public void WinGame()
