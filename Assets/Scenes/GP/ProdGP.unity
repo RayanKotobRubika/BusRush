@@ -1009,7 +1009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 7962462066160482468, guid: 348a189e9fe743c4e976d5cd724bf3a3, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 2721684095276187753, guid: d56fc3ec8b6ff2f49937d911437d6a39, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
   <CostText>k__BackingField: {fileID: 48291590}
   DragOffset: {x: 0, y: 0, z: 0}
@@ -3850,7 +3850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 3700644609064170710, guid: 3d1c2f0dd9442d641b8f327b84a19a22, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 8677158753684789445, guid: ba85da00e0929ca44adc0153d95da13e, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
   <CostText>k__BackingField: {fileID: 1175887670}
   DragOffset: {x: 0, y: 0, z: 0}
@@ -8212,6 +8212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <MainCamera>k__BackingField: {fileID: 1830320029}
+  <WinScreen>k__BackingField: {fileID: 0}
+  <LoseScreen>k__BackingField: {fileID: 0}
 --- !u!1 &1378376915
 GameObject:
   m_ObjectHideFlags: 0
@@ -9142,7 +9144,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d8508e40fac39741960b659deb93403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Data: {fileID: 11400000, guid: 4f6d3a0f7b6dcf64d94ab450ce707a35, type: 2}
+  _forceSceneNumber: 0
+  _levelNumberText: {fileID: 0}
+  _timeBeforeStart: 5
+  _countdownPanel: {fileID: 0}
+  _countdownText: {fileID: 0}
+  _slideDuration: 0
+  _bouncyScale: 0
+  _bounceDuration: 0
+  ReadyToPlay: 0
 --- !u!1 &1544698834
 GameObject:
   m_ObjectHideFlags: 0

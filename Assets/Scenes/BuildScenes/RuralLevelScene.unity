@@ -411,7 +411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 5303738332828666216, guid: 89fb2b7968dfa364d99c9d7c0fd7ad71, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -952725983, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1201282058}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
+  m_Sprite: {fileID: -952725983, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2315,7 +2315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: 4ca84943a16cb194ab334a3a2aa1d7b6, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -1404457278, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1153960462}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -2341,7 +2341,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
+  m_Sprite: {fileID: -1404457278, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3218,7 +3218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 956886aca8ec6b04c927b1306a999bd9, type: 2}
   m_Color: {r: 0.50980395, g: 0.8862745, b: 0.38039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4623,8 +4623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 7962462066160482468, guid: 348a189e9fe743c4e976d5cd724bf3a3, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 2721684095276187753, guid: d56fc3ec8b6ff2f49937d911437d6a39, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 1211740430, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1133831144}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -4650,7 +4650,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
+  m_Sprite: {fileID: 1211740430, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4720,7 +4720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 7676029448951723364, guid: 745a57cd8c63b6647bacbc782a80ae29, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 3016380990308706633, guid: c147ab635c8cc59478f5457a50f9a0b1, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -269149755, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 184272920}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -4746,7 +4746,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
+  m_Sprite: {fileID: -269149755, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4922,7 +4922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 3055499499512175319, guid: 159d11dfc829a75418666888074fc7ce, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 7165499010268766768, guid: e215714cb1e1a6e479132efe83d2011c, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -322401596, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 560919566}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -4948,7 +4948,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
+  m_Sprite: {fileID: -322401596, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5339,7 +5339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: abb8c4afe08ad4c4faaf72f38246b886, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: c6354feeb95d2df4fbad46cc31ae4edb, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 1042653282, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 2133722457}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -5365,7 +5365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
+  m_Sprite: {fileID: 1042653282, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6904,7 +6904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 956886aca8ec6b04c927b1306a999bd9, type: 2}
   m_Color: {r: 1, g: 0.3019608, b: 0.2784314, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7878,7 +7878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 1876005871584968990, guid: 0ff0f0f5825f2cb429d14fa9f29b79c4, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -956871079, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 623072877}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -7904,7 +7904,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8bf97802aa619a441a05159e2393c527, type: 3}
+  m_Sprite: {fileID: -956871079, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8388,8 +8388,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 3700644609064170710, guid: 3d1c2f0dd9442d641b8f327b84a19a22, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 8677158753684789445, guid: ba85da00e0929ca44adc0153d95da13e, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
+  <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -553582080, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 360271073}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -8415,7 +8415,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a8a0fae00c9284a8482878ebbb1d8d, type: 3}
+  m_Sprite: {fileID: -553582080, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8959,7 +8959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 956886aca8ec6b04c927b1306a999bd9, type: 2}
   m_Color: {r: 0, g: 0.7176471, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -11161,7 +11161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: 188f0162382564a418b4782cc315d550, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 5cae8fd319803dc4da393c9a6d7c0f0b, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 1258242896, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 433461453}
   DragOffset: {x: 0, y: 0, z: 0}
   _gridTileLayer:
@@ -11187,7 +11187,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2c3edacaab718b5488119add8a55b7af, type: 3}
+  m_Sprite: {fileID: 1258242896, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
