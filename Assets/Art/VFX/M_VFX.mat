@@ -63,10 +63,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Float: 0
+    - _Float_1: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - _MainColor: {r: 1, g: 1, b: 1, a: 0}
+    - _Main_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Main_color: {r: 1, g: 1, b: 1, a: 0}
+    - _Vector2: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
