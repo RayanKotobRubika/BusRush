@@ -1641,6 +1641,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2017609517566805851, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1003330161}
     - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
       propertyPath: <Levels>k__BackingField.Array.size
       value: 31

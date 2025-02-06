@@ -24,8 +24,16 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (PlayerPrefs.GetInt("ActivateMusic") == 0 && MusicSource.isPlaying) MusicSource.Stop(); 
+        if (PlayerPrefs.GetInt("ActivateSfx") == 0 && SFXSource.isPlaying) SFXSource.Stop(); 
+    }
+
     public void PlayMusic(string name)
     {
+        if (PlayerPrefs.GetInt("ActivateMusic") == 0) return; 
+        
         Sound s = Array.Find(MusicSounds, x => x.Name == name);
 
         if (s == null)
@@ -42,6 +50,8 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(string name)
     {
+        if (PlayerPrefs.GetInt("ActivateSfx") == 0) return; 
+        
         Sound s = Array.Find(SFXSounds, x => x.Name == name);
 
         if (s == null)

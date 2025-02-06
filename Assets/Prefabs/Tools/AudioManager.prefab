@@ -311,12 +311,6 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: 1415d6ea31e60344c8495006dd683a70, type: 3}
   SFXSounds:
   - Name: Pop1
-    Clip: {fileID: 8300000, guid: beb2432db91e3a743a848d55773fe625, type: 3}
-  - Name: Pop2
-    Clip: {fileID: 8300000, guid: 4c5ab6b148937fb47a7812ada7f9f8e9, type: 3}
-  - Name: Pop3
-    Clip: {fileID: 8300000, guid: 0d5ecca4344474545b790a35aafa77d5, type: 3}
-  - Name: Pop4
-    Clip: {fileID: 8300000, guid: 522803273a1d3534dbee5b3a55498f79, type: 3}
+    Clip: {fileID: 8300000, guid: 7101bbb22ac329747be2b75b6e794b25, type: 3}
   MusicSource: {fileID: 6594941877043845256}
   SFXSource: {fileID: 4406232183348679152}
