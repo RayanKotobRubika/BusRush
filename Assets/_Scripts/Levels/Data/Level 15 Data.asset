@@ -29,8 +29,10 @@ MonoBehaviour:
   - {fileID: 8506377958510113920, guid: 2f605046af9327e41a454266a0b7ad73, type: 3}
   - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
   - {fileID: 2246252299524881142, guid: 80a19354f0716d94d9d2960aa83f3294, type: 3}
+  - {fileID: 3831798318206814679, guid: 5490565c4a130ba4e9d1486145ec830b, type: 3}
   <PassengersMovementSpeed>k__BackingField: 2
   <PassengersSpawnRatePerBus>k__BackingField:
+  - 7
   - 7
   - 7
   - 7
@@ -47,6 +49,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 25, y: 50, z: 25}
+  - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
