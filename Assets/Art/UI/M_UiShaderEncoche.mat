@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_UiShader
+  m_Name: M_UiShaderEncoche
   m_Shader: {fileID: -6465566751694194690, guid: 0b74631b5751eb64e8abc627d7af99ef, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -61,7 +61,7 @@ Material:
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
     - _Tile: {r: 1, g: 1, b: 0, a: 0}
-    - _TilingTex: {r: 1.85, g: 4.37, b: 0, a: 0}
+    - _TilingTex: {r: 3.56, g: 14, b: 0, a: 0}
     - _Vector2: {r: 2.07, g: 4.31, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
