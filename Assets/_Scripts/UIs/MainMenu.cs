@@ -46,7 +46,7 @@ public class MainMenu : MonoBehaviour
     {
         int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
         
-        if (currentLevel >= SceneHandler.Instance.Levels.Count) return;
+        if (currentLevel >= SceneHandler.Instance.Levels.Count - 1) return;
         
         PlayerPrefs.SetInt("CurrentLevel", currentLevel + 1);
         
