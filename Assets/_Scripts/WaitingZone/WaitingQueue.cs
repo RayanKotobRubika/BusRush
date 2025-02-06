@@ -29,6 +29,14 @@ public class WaitingQueue : MonoBehaviour
             PassengerColor.Green => LevelManager.Instance.Data.MaxGreenCapacity,
             _ => throw new ArgumentOutOfRangeException()
         };
+        
+        _currentPassengers = Color switch
+        {
+            PassengerColor.Blue => LevelManager.Instance.Data.DefaultBlueCapacity,
+            PassengerColor.Red => LevelManager.Instance.Data.DefaultRedCapacity,
+            PassengerColor.Green => LevelManager.Instance.Data.DefaultGreenCapacity,
+            _ => throw new ArgumentOutOfRangeException()
+        };
     }
 
     private void Start()

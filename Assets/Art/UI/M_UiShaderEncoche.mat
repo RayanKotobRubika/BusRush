@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_UIShaderHard
+  m_Name: M_UiShaderEncoche
   m_Shader: {fileID: -6465566751694194690, guid: 0b74631b5751eb64e8abc627d7af99ef, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -46,8 +46,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _HoritontalScroll: 0.2
-    - _PatternOpacity: 0.5
+    - _HoritontalScroll: 0
+    - _HorizontalSpeed: 0
+    - _PatternOpacity: 0.188
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -55,9 +56,12 @@ Material:
     - _StencilWriteMask: 255
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
-    - _VerticalScroll: 0.2
+    - _VerticalScroll: -0.115
+    - _VerticalSpeed: 0
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _Vector2: {r: 50, g: 50, b: 0, a: 0}
+    - _Tile: {r: 1, g: 1, b: 0, a: 0}
+    - _TilingTex: {r: 3.56, g: 14, b: 0, a: 0}
+    - _Vector2: {r: 2.07, g: 4.31, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
