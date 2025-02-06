@@ -19,18 +19,21 @@ public class PlusText : MonoBehaviour
 
     [SerializeField] private float _scaleFactor;
     [SerializeField] private float _scaleDuration;
+    private Vector3 _initialScale;
 
     private void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
         _plusText = GetComponent<TextMeshProUGUI>();
         _initialPosition = _rectTransform.position;
+        _initialScale = _rectTransform.localScale;
     }
 
     private void OnDisable()
     {
         CurrentValue = 0;
         _rectTransform.position = _initialPosition;
+        _rectTransform.localScale = _initialScale;
     }
 
     private void Update()
