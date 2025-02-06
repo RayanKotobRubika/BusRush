@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 
@@ -17,10 +19,16 @@ public class Vehicle : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _remainingPassengersText;
 
+    private Coroutine _upAndDownCoroutine;
+    private bool _startedCoroutine;
+
     private void Awake()
     {
         _originalScale = transform.localScale;
     }
+
+    private void Start()
+    {}
 
     private void Update()
     {

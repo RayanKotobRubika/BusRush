@@ -119,4 +119,21 @@ public static class CoroutineUtils
 
         target.alpha = 0;
     }
+    
+    public static IEnumerator FloatObject(Transform target, float height, float speed, float sideMovement)
+    {
+        Vector3 startPos = target.position;
+        float time = 0f;
+        
+        while (true)
+        {
+            time += Time.deltaTime;
+            float verticalOffset = Mathf.Sin(time * speed) * height;
+            float horizontalOffset = Mathf.Cos(time * speed * 0.5f) * sideMovement;
+            
+            target.position = startPos + new Vector3(horizontalOffset, verticalOffset, 0);
+            
+            yield return null;
+        }
+    }
 }
