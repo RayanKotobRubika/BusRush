@@ -111,9 +111,20 @@ public class LevelManager : MonoBehaviour
 
     private void TutorialLogic()
     {
+        if (_enemiesTutorialSpawnData.Count <= 0) return;
+        
         _spawnTimer += Time.deltaTime;
 
-        
+        for (int index = _enemiesTutorialSpawnData.Count - 1; index >= 0; index--)
+        {
+            Vector3 data = _enemiesTutorialSpawnData[index];
+
+            if (data.x > _spawnTimer) continue;
+
+            PassengerManager.Instance.SpawnPassenger(LaneManager.Instance.Lanes[0], (PassengerColor)(int)data.y, (int)data.z);
+
+            _enemiesTutorialSpawnData.RemoveAt(index);
+        }
     }
 
     private void HandleCountdown()

@@ -52,4 +52,20 @@ public class PassengerManager : MonoBehaviour
         Passenger passenger = Instantiate(passengerPrefab, position, Quaternion.identity, _passengerContainer);
         StartCoroutine(CoroutineUtils.ScaleToTarget(passenger.transform, 1f, 1.1f, 0.9f, 0.2f));
     }
+    
+    public void SpawnPassenger(Lane lane, PassengerColor color, int position)
+    {
+        Passenger passengerPrefab = null;
+        
+        foreach (Passenger p in _passengerPrefabs)
+        {
+            if (p.Color != color) continue;
+
+            passengerPrefab = p;
+            break;
+        }
+        
+        Passenger passenger = Instantiate(passengerPrefab, lane.PassengerSpawnPoints[position].position, Quaternion.identity, _passengerContainer);
+        StartCoroutine(CoroutineUtils.ScaleToTarget(passenger.transform, 1f, 1.1f, 0.9f, 0.2f));
+    }
 }
