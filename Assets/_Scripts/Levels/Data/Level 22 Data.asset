@@ -22,18 +22,18 @@ MonoBehaviour:
   <VehicleList>k__BackingField:
   - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
   - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
-  - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
   - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
-  - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
+  - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
+  - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
   - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}
   <PassengersMovementSpeed>k__BackingField: 2
   <PassengersSpawnRatePerBus>k__BackingField:
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
   <PassengersColorRatesPerBus>k__BackingField:
   - {x: 100, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}

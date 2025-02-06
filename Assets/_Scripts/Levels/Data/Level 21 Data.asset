@@ -28,14 +28,14 @@ MonoBehaviour:
   - {fileID: 2246252299524881142, guid: 863f088b98657594dab0533665c7608e, type: 3}
   <PassengersMovementSpeed>k__BackingField: 2
   <PassengersSpawnRatePerBus>k__BackingField:
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
   <PassengersColorRatesPerBus>k__BackingField:
-  - {x: 50, y: 0, z: 50}
+  - {x: 60, y: 0, z: 40}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
