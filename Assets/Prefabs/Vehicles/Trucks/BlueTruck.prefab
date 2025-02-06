@@ -248,6 +248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440415583891705376}
   - component: {fileID: 8506377958510113920}
+  - component: {fileID: -8647072470718923959}
   m_Layer: 0
   m_Name: BlueTruck
   m_TagString: Untagged
@@ -291,6 +292,28 @@ MonoBehaviour:
   _bounceDuration: 0.15
   _movementSpeed: 5
   _remainingPassengersText: {fileID: 3147151385916896927}
+--- !u!95 &-8647072470718923959
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791402509377012364}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 54ac2b12b94da004f86cb04f3bdbf953, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6988883075717556920
 PrefabInstance:
   m_ObjectHideFlags: 0

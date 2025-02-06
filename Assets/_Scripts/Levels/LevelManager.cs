@@ -30,7 +30,7 @@ public class LevelManager : MonoBehaviour
 
     [HideInInspector] public bool ReadyToPlay = false;
     private bool _started = false;
-    private bool _countDownEnded = false;
+    public bool CountDownEnded { get; private set; }
     
     private void Awake()
     {
@@ -66,7 +66,7 @@ public class LevelManager : MonoBehaviour
             _spawnTimer = 1 / _currentRate;
         }
 
-        if (!_countDownEnded)
+        if (!CountDownEnded)
         {
             if (_timerIntCounter == _timeBeforeStart) 
                 SlideCountdownText();
@@ -82,14 +82,14 @@ public class LevelManager : MonoBehaviour
 
                 if (_timerIntCounter > 4) return;
                 
-                StartCoroutine(CoroutineUtils.BouncyScale(_countdownText.rectTransform, _bouncyScale, _bounceDuration));
-                _countdownText.text = _timerIntCounter == 1 ? "GO !" : (_timerIntCounter - 1).ToString();
+                StartCoroutine(CoroutineUtils.BouncyScale(_countdownText.rectTransform, _bouncyScale, _bounceDuration, true));
+                _countdownText.text = _timerIntCounter <= 1 ? "GO !" : (_timerIntCounter - 1).ToString();
 
                 return;
             }
 
             _countdownPanel.SetActive(false);
-            _countDownEnded = true;
+            CountDownEnded = true;
 
             return;
         }

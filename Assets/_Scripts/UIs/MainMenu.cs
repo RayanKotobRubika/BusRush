@@ -18,10 +18,17 @@ public class MainMenu : MonoBehaviour
 
     public void Start()
     {
+        AudioManager.Instance.PlayMusic("Menu");
         if (!_allowLevelChoice)
             _levelSelectionInterface.SetActive(false);
 
         UpdateText(SceneHandler.Instance.GetCurrentLevelData().LevelIndex);
+    }
+
+    private void Update()
+    {
+        if (!AudioManager.Instance.MusicSource.isPlaying)
+            AudioManager.Instance.PlayMusic("Menu");
     }
 
     public void OpenSettings()
@@ -32,14 +39,14 @@ public class MainMenu : MonoBehaviour
     public void BounceButton(Transform buttonTransform)
     {
         StopAllCoroutines();
-        StartCoroutine(CoroutineUtils.BouncyScale(buttonTransform, _bouncyScale, _bounceDuration));
+        StartCoroutine(CoroutineUtils.BouncyScale(buttonTransform, _bouncyScale, _bounceDuration, true));
     }
 
     public void IncreaseLevel()
     {
         int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
         
-        if (currentLevel >= SceneHandler.Instance.Levels.Count) return;
+        if (currentLevel >= SceneHandler.Instance.Levels.Count - 1) return;
         
         PlayerPrefs.SetInt("CurrentLevel", currentLevel + 1);
         

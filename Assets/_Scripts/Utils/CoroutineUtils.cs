@@ -3,7 +3,7 @@ using UnityEngine;
 
 public static class CoroutineUtils
 {
-    public static IEnumerator BouncyScale(Transform target, float scaleFactor, float duration)
+    public static IEnumerator BouncyScale(Transform target, float scaleFactor, float duration, bool playSound)
     {
         Vector3 originalScale = target.localScale;
         Vector3 targetScale = originalScale * scaleFactor;
@@ -17,6 +17,8 @@ public static class CoroutineUtils
             yield return null;
         }
         target.localScale = targetScale;
+        
+        if (playSound) AudioManager.Instance.PlaySFX("Pop1");
 
         elapsed = 0f;
         while (elapsed < halfDuration)

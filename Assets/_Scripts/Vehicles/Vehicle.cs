@@ -41,7 +41,7 @@ public class Vehicle : MonoBehaviour
     public void AddPassenger()
     {
         CurrentPassengers++;
-        StartCoroutine(CoroutineUtils.BouncyScale(transform, _bouncyScaleFactor, _bounceDuration));
+        StartCoroutine(CoroutineUtils.BouncyScale(transform, _bouncyScaleFactor, _bounceDuration, true));
     }
 
     public void MoveVehicle(Vector3 targetPos)
