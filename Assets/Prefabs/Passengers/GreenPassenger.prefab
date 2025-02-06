@@ -198,15 +198,15 @@ PrefabInstance:
     - target: {fileID: 4846062786089838236, guid: b15c415f1bea3a24d8608b8159739c0f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 8c5d73f2d16a1ac47a0b999dc3d10d98, type: 2}
+      objectReference: {fileID: 2100000, guid: f300dea068808094ba96f601e49156c5, type: 2}
     - target: {fileID: 6264444741933143086, guid: b15c415f1bea3a24d8608b8159739c0f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 84bb5abb9e0a4474ebd57fd367fe1be1, type: 2}
+      objectReference: {fileID: 2100000, guid: 13380b4417126ce4eaaa201f8650b0ab, type: 2}
     - target: {fileID: 7339638165263665612, guid: b15c415f1bea3a24d8608b8159739c0f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 884f5df0fbf265b43bdb5137611bd858, type: 2}
+      objectReference: {fileID: 2100000, guid: d0f637c413e36674db9dcc9d8cefec16, type: 2}
     - target: {fileID: 8116780052244363129, guid: b15c415f1bea3a24d8608b8159739c0f, type: 3}
       propertyPath: m_Name
       value: Cat
