@@ -6,44 +6,26 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject _settingsPanel;
-    [SerializeField] private GameObject _creditsPanel;
-
-    [SerializeField] private GameObject _activatedMusicButton;
-    [SerializeField] private GameObject _deactivatedMusicButton;
-    
-    [SerializeField] private GameObject _activatedSfxButton;
-    [SerializeField] private GameObject _deactivatedSfxButton;
 
     [SerializeField] private float _bouncyScale;
     [SerializeField] private float _bounceDuration;
 
     [SerializeField] private TextMeshProUGUI _levelText;
 
+    [SerializeField] private bool _allowLevelChoice;
+    [SerializeField] private TextMeshProUGUI _levelChoiceText;
+    [SerializeField] private GameObject _levelSelectionInterface;
+
     public void Start()
     {
-        
-        _levelText.text = "LEVEL " + SceneHandler.Instance.GetCurrentLevelData().LevelIndex;
+        if (!_allowLevelChoice)
+            _levelSelectionInterface.SetActive(false);
+
+        UpdateText(SceneHandler.Instance.GetCurrentLevelData().LevelIndex);
     }
 
     public void OpenSettings()
     {
-        _settingsPanel.SetActive(true);
-    }
-
-    public void CloseSettings()
-    {
-        _settingsPanel.SetActive(false);
-    }
-
-    public void OpenCredits()
-    {
-        _settingsPanel.SetActive(false);
-        _creditsPanel.SetActive(true);
-    }
-
-    public void CloseCredits()
-    {
-        _creditsPanel.SetActive(false);
         _settingsPanel.SetActive(true);
     }
 
@@ -53,34 +35,36 @@ public class MainMenu : MonoBehaviour
         StartCoroutine(CoroutineUtils.BouncyScale(buttonTransform, _bouncyScale, _bounceDuration));
     }
 
-    public void ToggleMusic(bool setActive)
+    public void IncreaseLevel()
     {
-        _activatedMusicButton.SetActive(setActive);
-        _deactivatedMusicButton.SetActive(!setActive);
-
-        StartCoroutine(setActive
-            ? CoroutineUtils.BouncyScale(_activatedMusicButton.transform, _bouncyScale, _bounceDuration)
-            : CoroutineUtils.BouncyScale(_deactivatedMusicButton.transform, _bouncyScale, _bounceDuration));
-
-        PlayerPrefs.SetInt("ActivateMusic", setActive ? 1 : 0);
-        PlayerPrefs.Save();
-    }
-    
-    public void ToggleSfx(bool setActive)
-    {
-        _activatedSfxButton.SetActive(setActive);
-        _deactivatedSfxButton.SetActive(!setActive);
-
-        StartCoroutine(setActive
-            ? CoroutineUtils.BouncyScale(_activatedSfxButton.transform, _bouncyScale, _bounceDuration)
-            : CoroutineUtils.BouncyScale(_deactivatedSfxButton.transform, _bouncyScale, _bounceDuration));
+        int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
         
-        PlayerPrefs.SetInt("ActivateSfx", setActive ? 1 : 0);
-        PlayerPrefs.Save();
+        if (currentLevel >= SceneHandler.Instance.Levels.Count) return;
+        
+        PlayerPrefs.SetInt("CurrentLevel", currentLevel + 1);
+        
+        UpdateText(currentLevel + 1);
     }
 
-    public void Play()
+    public void DecreaseLevel()
     {
-        //SceneManager.LoadScene()
+        int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
+        
+        if (currentLevel <= 0) return;
+        
+        PlayerPrefs.SetInt("CurrentLevel", currentLevel - 1);
+
+        UpdateText(currentLevel - 1);
+    }
+
+    private void UpdateText(int currentLevel)
+    {
+        if (_allowLevelChoice)
+            _levelChoiceText.text = currentLevel.ToString();
+        
+        if (currentLevel != 0)
+            _levelText.text = "LEVEL " + currentLevel;
+        else
+            _levelText.text = "TUTORIAL";
     }
 }

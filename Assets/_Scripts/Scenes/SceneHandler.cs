@@ -31,13 +31,13 @@ public class SceneHandler : MonoBehaviour
         
         if (PlayerPrefs.HasKey("CurrentLevel"))
         {
-            _currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
+            _currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
         }
         else
         {
-            PlayerPrefs.SetInt("CurrentLevel", 1);
+            PlayerPrefs.SetInt("CurrentLevel", 0);
             PlayerPrefs.Save();
-            _currentLevel = 1;
+            _currentLevel = 0;
         }
     }
 
@@ -45,14 +45,14 @@ public class SceneHandler : MonoBehaviour
     {
         var scene = SceneManager.LoadSceneAsync(sceneName);
         scene.allowSceneActivation = false;
-        //_progressBar.gameObject.SetActive(true);
 
+        _progressBar.value = 0;
         do
         {
             _progressBar.value = scene.progress * 0.01f;
         } while (scene.progress < 0.9f);
         
-        //_progressBar.gameObject.SetActive(false);
+        _progressBar.value = 1;
         
         scene.allowSceneActivation = true;
 
@@ -62,6 +62,8 @@ public class SceneHandler : MonoBehaviour
     public IEnumerator LoadLevel(string sceneName)
     {
         _animator.SetTrigger("TrStart");
+
+        _currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
         
         yield return new WaitForSeconds(_transitionTime);
         
@@ -79,6 +81,6 @@ public class SceneHandler : MonoBehaviour
 
     public LevelData GetCurrentLevelData()
     {
-        return Levels[PlayerPrefs.GetInt("CurrentLevel", 1) - 1];
+        return Levels[PlayerPrefs.GetInt("CurrentLevel", 0)];
     }
 }

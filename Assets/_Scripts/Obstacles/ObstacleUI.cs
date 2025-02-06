@@ -1,5 +1,8 @@
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 using Vector3 = UnityEngine.Vector3;
 
@@ -18,9 +21,10 @@ public class ObstacleUI : MonoBehaviour
     private bool _isDragged = false;
     private bool _isSnapped = false;
 
-    [SerializeField] private Vector3 DragOffset;
-
     [SerializeField] private LayerMask _gridTileLayer;
+
+    [SerializeField] private GameObject _lockGroup;
+    private bool _isLocked;
 
     private void Awake()
     {
@@ -47,6 +51,12 @@ public class ObstacleUI : MonoBehaviour
     {
         _mainCamera = GameManager.Instance.MainCamera;
         CostText.text = $"{RelatedObstacle.CatBellCost}";
+
+        _isLocked = ObstacleManager.Instance.ObstacleUnlockLevels
+            .Any(o => o.Obstacle == RelatedObstacle && o.Level > SceneHandler.Instance.GetCurrentLevelData().LevelIndex);
+        
+        gameObject.SetActive(!_isLocked);
+        _lockGroup.SetActive(_isLocked);
     }
 
     private void Update()
