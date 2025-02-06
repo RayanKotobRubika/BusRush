@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7175870352259961043}
   - component: {fileID: 7038607774340483396}
+  - component: {fileID: -713985900229231065}
   m_Layer: 0
   m_Name: GreenCar
   m_TagString: Untagged
@@ -53,6 +54,28 @@ MonoBehaviour:
   _bounceDuration: 0.15
   _movementSpeed: 5
   _remainingPassengersText: {fileID: 1234585163526861593}
+--- !u!95 &-713985900229231065
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005168115478049457}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 54ac2b12b94da004f86cb04f3bdbf953, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7705432695291264888
 GameObject:
   m_ObjectHideFlags: 0
