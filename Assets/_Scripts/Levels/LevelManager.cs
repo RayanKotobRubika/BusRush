@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -26,6 +27,8 @@ public class LevelManager : MonoBehaviour
     private float _spawnTimer;
     private Vector3 _currentOdds;
 
+    private List<Vector3> _enemiesTutorialSpawnData;
+
     private int _busCounter = 0;
 
     [HideInInspector] public bool ReadyToPlay = false;
@@ -49,7 +52,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        _levelNumberText.text = "Level " + Data.LevelIndex;
+        _levelNumberText.text = Data.LevelIndex == 0 ? "TUTORIAL" : "Level " + Data.LevelIndex;
     }
 
     private void Update()
@@ -64,36 +67,29 @@ public class LevelManager : MonoBehaviour
             _currentOdds = Data.PassengersColorRatesPerBus[_busCounter];
 
             _spawnTimer = 1 / _currentRate;
+
+            if (Data.IsTutorial)
+            {
+                _spawnTimer = 0;
+                _enemiesTutorialSpawnData = new List<Vector3>(Data.PassengersColorRatesPerBus);
+            }
         }
 
         if (!CountDownEnded)
         {
-            if (_timerIntCounter == _timeBeforeStart) 
-                SlideCountdownText();
-
-            if (_timerIntCounter > 0)
-            {
-                _timerBeforeStart -= Time.deltaTime;
-
-                if (!(_timerBeforeStart <= 0)) return;
-                
-                _timerIntCounter--;
-                _timerBeforeStart++;
-
-                if (_timerIntCounter > 4) return;
-                
-                StartCoroutine(CoroutineUtils.BouncyScale(_countdownText.rectTransform, _bouncyScale, _bounceDuration, true));
-                _countdownText.text = _timerIntCounter <= 1 ? "GO !" : (_timerIntCounter - 1).ToString();
-
-                return;
-            }
-
-            _countdownPanel.SetActive(false);
-            CountDownEnded = true;
-
+            HandleCountdown();
             return;
         }
+
+        if (Data.IsTutorial)
+            TutorialLogic();
+        else
+            RegularLogic();
         
+    }
+
+    private void RegularLogic()
+    {
         _spawnTimer -= Time.deltaTime;
 
         if (_spawnTimer > 0) return;
@@ -111,6 +107,41 @@ public class LevelManager : MonoBehaviour
             color = PassengerColor.Blue;
         
         PassengerManager.Instance.SpawnPassenger(LaneManager.Instance.Lanes[0], color);
+    }
+
+    private void TutorialLogic()
+    {
+        _spawnTimer += Time.deltaTime;
+
+        
+    }
+
+    private void HandleCountdown()
+    {
+        if (_timerIntCounter == _timeBeforeStart) 
+            SlideCountdownText();
+
+        if (_timerIntCounter > 0)
+        {
+            _timerBeforeStart -= Time.deltaTime;
+
+            if (!(_timerBeforeStart <= 0)) return;
+                
+            _timerIntCounter--;
+            _timerBeforeStart++;
+
+            if (_timerIntCounter > 4) return;
+                
+            StartCoroutine(CoroutineUtils.BouncyScale(_countdownText.rectTransform, _bouncyScale, _bounceDuration, true));
+            _countdownText.text = _timerIntCounter <= 1 ? "GO !" : (_timerIntCounter - 1).ToString();
+
+            return;
+        }
+
+        _countdownPanel.SetActive(false);
+        CountDownEnded = true;
+
+        return;
     }
 
     public void ChangeRateAndOdds(Vehicle vehicle)

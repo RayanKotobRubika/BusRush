@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelData : ScriptableObject
 {
     [Header("General")]
+    [field:SerializeField] public bool IsTutorial { get; private set; }
     [field:SerializeField] public int LevelIndex { get; private set; }
     
     [Header("Capacities")]
