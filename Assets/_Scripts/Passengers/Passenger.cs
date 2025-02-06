@@ -5,7 +5,7 @@ using UnityEngine.Serialization;
 
 public class Passenger : MonoBehaviour
 {
-    public float MovementSpeed { get; private set; }
+    public float MovementSpeed { get; set; }
     public NavMeshAgent Agent { get; private set; }
     public Rigidbody RB { get; private set; }
     public Collider Coll { get; private set; }

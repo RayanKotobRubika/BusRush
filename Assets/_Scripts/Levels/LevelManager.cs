@@ -27,13 +27,19 @@ public class LevelManager : MonoBehaviour
     private float _spawnTimer;
     private Vector3 _currentOdds;
 
-    private List<Vector3> _enemiesTutorialSpawnData;
-
     private int _busCounter = 0;
 
     [HideInInspector] public bool ReadyToPlay = false;
     private bool _started = false;
     public bool CountDownEnded { get; private set; }
+    
+    // TUTORIAL
+
+    private List<Vector3> _enemiesTutorialSpawnData;
+    
+    public bool TimeFrozen { get; private set; }
+    
+    
     
     private void Awake()
     {

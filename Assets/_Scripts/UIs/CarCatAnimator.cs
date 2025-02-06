@@ -28,9 +28,7 @@ public class CarCatAnimator : MonoBehaviour
 
     public void TryAnimatingCar(Vector2 screenPos, float time)
     {
-        Debug.Log(screenPos);
         Ray ray = _mainCamera.ScreenPointToRay(screenPos);
-        Debug.DrawRay(ray.origin, ray.direction, Color.red, 10f);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit))

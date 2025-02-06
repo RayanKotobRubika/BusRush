@@ -6,7 +6,7 @@ public class PassengerManager : MonoBehaviour
     public static PassengerManager Instance { get; private set; }
     
     [SerializeField] private Passenger[] _passengerPrefabs;
-    [SerializeField] private Transform _passengerContainer;
+    [field:SerializeField] public Transform PassengerContainer { get; private set; }
     
     private void Awake()
     {
@@ -33,7 +33,7 @@ public class PassengerManager : MonoBehaviour
             break;
         }
         
-        Passenger passenger = Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, Quaternion.identity, _passengerContainer);
+        Passenger passenger = Instantiate(passengerPrefab, lane.PassengerSpawnPoints[index].position, Quaternion.identity, PassengerContainer);
         StartCoroutine(CoroutineUtils.ScaleToTarget(passenger.transform, 1f, 1.1f, 0.9f, 0.2f));
     }
     
@@ -49,7 +49,7 @@ public class PassengerManager : MonoBehaviour
             break;
         }
         
-        Passenger passenger = Instantiate(passengerPrefab, position, Quaternion.identity, _passengerContainer);
+        Passenger passenger = Instantiate(passengerPrefab, position, Quaternion.identity, PassengerContainer);
         StartCoroutine(CoroutineUtils.ScaleToTarget(passenger.transform, 1f, 1.1f, 0.9f, 0.2f));
     }
     
@@ -65,7 +65,7 @@ public class PassengerManager : MonoBehaviour
             break;
         }
         
-        Passenger passenger = Instantiate(passengerPrefab, lane.PassengerSpawnPoints[position].position, Quaternion.identity, _passengerContainer);
+        Passenger passenger = Instantiate(passengerPrefab, lane.PassengerSpawnPoints[position].position, Quaternion.identity, PassengerContainer);
         StartCoroutine(CoroutineUtils.ScaleToTarget(passenger.transform, 1f, 1.1f, 0.9f, 0.2f));
     }
 }
