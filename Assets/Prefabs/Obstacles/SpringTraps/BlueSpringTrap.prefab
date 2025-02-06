@@ -124,5 +124,5 @@ MonoBehaviour:
   <Color>k__BackingField: 2
   <Dimensions>k__BackingField: {x: 3, y: 1}
   <CatBellCost>k__BackingField: 40
-  <LifeTime>k__BackingField: 10
+  <LifeTime>k__BackingField: 5
   _bumpForce: 20
