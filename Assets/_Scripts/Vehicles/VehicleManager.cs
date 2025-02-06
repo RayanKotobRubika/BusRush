@@ -60,7 +60,7 @@ public class VehicleManager : MonoBehaviour
         
         UpdateText();
 
-        BusIsActive = CurrentVehicles[0].transform.position == VehiclesPositionsPoints[0].position
+        BusIsActive = (CurrentVehicles[0].transform.position - VehiclesPositionsPoints[0].position).sqrMagnitude < 2
                       && CurrentVehicles[0].CurrentPassengers < CurrentVehicles[0].Capacity;
         
         if (CurrentVehicles[^1] == null && VehicleList.Count > 0)

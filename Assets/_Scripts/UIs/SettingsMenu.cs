@@ -32,8 +32,8 @@ public class SettingsMenu : MonoBehaviour
         _deactivatedMusicButton.SetActive(!setActive);
 
         StartCoroutine(setActive
-            ? CoroutineUtils.BouncyScale(_activatedMusicButton.transform, _bouncyScale, _bounceDuration)
-            : CoroutineUtils.BouncyScale(_deactivatedMusicButton.transform, _bouncyScale, _bounceDuration));
+            ? CoroutineUtils.BouncyScale(_activatedMusicButton.transform, _bouncyScale, _bounceDuration, true)
+            : CoroutineUtils.BouncyScale(_deactivatedMusicButton.transform, _bouncyScale, _bounceDuration, true));
 
         PlayerPrefs.SetInt("ActivateMusic", setActive ? 1 : 0);
         PlayerPrefs.Save();
@@ -45,8 +45,8 @@ public class SettingsMenu : MonoBehaviour
         _deactivatedSfxButton.SetActive(!setActive);
 
         StartCoroutine(setActive
-            ? CoroutineUtils.BouncyScale(_activatedSfxButton.transform, _bouncyScale, _bounceDuration)
-            : CoroutineUtils.BouncyScale(_deactivatedSfxButton.transform, _bouncyScale, _bounceDuration));
+            ? CoroutineUtils.BouncyScale(_activatedSfxButton.transform, _bouncyScale, _bounceDuration, true)
+            : CoroutineUtils.BouncyScale(_deactivatedSfxButton.transform, _bouncyScale, _bounceDuration, true));
         
         PlayerPrefs.SetInt("ActivateSfx", setActive ? 1 : 0);
         PlayerPrefs.Save();

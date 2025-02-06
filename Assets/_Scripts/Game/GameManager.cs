@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -27,11 +28,22 @@ public class GameManager : MonoBehaviour
 
         IsGameOver = false;
     }
-    
+
+    private void Start()
+    {
+        AudioManager.Instance.MusicSource.Stop();
+    }
+
+    private void Update()
+    {
+        if (!AudioManager.Instance.MusicSource.isPlaying && LevelManager.Instance.CountDownEnded)
+            AudioManager.Instance.PlayMusic("Game");
+    }
+
     public void BounceButton(Transform buttonTransform)
     {
         StopAllCoroutines();
-        StartCoroutine(CoroutineUtils.BouncyScale(buttonTransform, _bouncyScale, _bounceDuration));
+        StartCoroutine(CoroutineUtils.BouncyScale(buttonTransform, _bouncyScale, _bounceDuration, true));
     }
 
     public void WinGame()

@@ -48,7 +48,7 @@ public class PlusText : MonoBehaviour
         _rectTransform.position = _initialPosition;
         StartCoroutine(CoroutineUtils.EaseInOutMoveUI(_rectTransform,
             _rectTransform.anchoredPosition + Vector2.up * _yOffsetMovement, _upMotionDuration));
-        StartCoroutine(CoroutineUtils.BouncyScale(_rectTransform, _scaleFactor, _scaleDuration));
+        StartCoroutine(CoroutineUtils.BouncyScale(_rectTransform, _scaleFactor, _scaleDuration, true));
         _activityTimer = _activityTime;
     }
     
