@@ -5624,7 +5624,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - OUTLINE_ON
-  - UNDERLAY_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -5683,12 +5682,12 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0.188
+    - _OutlineWidth: 0.344
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 0.73125
-    - _ScaleRatioC: 0.50670624
+    - _ScaleRatioC: 0.81225
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -5701,9 +5700,9 @@ Material:
     - _StencilWriteMask: 0
     - _TextureHeight: 1024
     - _TextureWidth: 1024
-    - _UnderlayDilate: 0.603
-    - _UnderlayOffsetX: 0
-    - _UnderlayOffsetY: -1
+    - _UnderlayDilate: 0.57
+    - _UnderlayOffsetX: 0.11
+    - _UnderlayOffsetY: -0.23
     - _UnderlaySoftness: 0
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
@@ -5719,6 +5718,6 @@ Material:
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-    - _UnderlayColor: {r: 0, g: 0, b: 0, a: 1}
+    - _UnderlayColor: {r: 1, g: 0.46427226, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
