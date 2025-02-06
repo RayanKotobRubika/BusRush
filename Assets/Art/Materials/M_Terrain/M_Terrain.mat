@@ -55,15 +55,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Emissive: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 0.25
+    - _Scale: 0.167
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0}
-    - _Color01: {r: 0.46226418, g: 0.28564438, b: 0.28564438, a: 1}
-    - _Color02: {r: 0.5188679, g: 0.38425595, b: 0.38425595, a: 1}
+    - _Color01: {r: 0.33962262, g: 0.26686805, b: 0.25792095, a: 1}
+    - _Color02: {r: 0.3679245, g: 0.3194897, b: 0.2932983, a: 1}
     - _Color_1: {r: 0, g: 0, b: 0, a: 0}
-    - _Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Offset: {r: 0.38, g: -0.01, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
