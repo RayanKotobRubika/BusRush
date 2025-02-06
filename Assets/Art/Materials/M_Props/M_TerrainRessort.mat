@@ -58,7 +58,7 @@ Material:
     - _Emissive: 2.32
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 0.168
+    - _Scale: 0.167
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0}
     - _Color01: {r: 1, g: 0.25892252, b: 0.23113209, a: 1}
