@@ -24,6 +24,7 @@ public class ObstacleUI : MonoBehaviour
     [SerializeField] private LayerMask _gridTileLayer;
 
     [SerializeField] private GameObject _lockGroup;
+    [SerializeField] private TextMeshProUGUI _unlockLevelText;
     private bool _isLocked;
 
     private void Awake()
@@ -52,11 +53,16 @@ public class ObstacleUI : MonoBehaviour
         _mainCamera = GameManager.Instance.MainCamera;
         CostText.text = $"{RelatedObstacle.CatBellCost}";
 
-        _isLocked = ObstacleManager.Instance.ObstacleUnlockLevels
-            .Any(o => o.Obstacle == RelatedObstacle && o.Level > SceneHandler.Instance.GetCurrentLevelData().LevelIndex);
+        int unlockLevel = ObstacleManager.Instance.ObstacleUnlockLevels
+            .Where(o => o.Obstacle == RelatedObstacle)
+            .Select(o => o.Level)
+            .FirstOrDefault();
+        
+        _isLocked = unlockLevel > SceneHandler.Instance.GetCurrentLevelData().LevelIndex;
         
         gameObject.SetActive(!_isLocked);
         _lockGroup.SetActive(_isLocked);
+        if (_isLocked) _unlockLevelText.text = "LEVEL " + unlockLevel;
     }
 
     private void Update()
