@@ -1,5 +1,13 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+
+[Serializable]
+public struct ObstacleUnlockLevel
+{
+    public int Level;
+    public Obstacle Obstacle;
+}
 
 public class ObstacleManager : MonoBehaviour
 {
@@ -14,6 +22,8 @@ public class ObstacleManager : MonoBehaviour
 
     [field:SerializeField] public float ObstacleHeight { get; private set; }
     [field:SerializeField] public Transform ObstaclesParent { get; private set; }
+    
+    [field:SerializeField] public List<ObstacleUnlockLevel> ObstacleUnlockLevels { get; private set; }
 
     private void Awake()
     {

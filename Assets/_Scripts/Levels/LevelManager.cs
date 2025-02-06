@@ -10,7 +10,6 @@ public class LevelManager : MonoBehaviour
     
     public LevelData Data { get; private set; }
 
-    [SerializeField] private int _forceSceneNumber;
     [SerializeField] private TextMeshProUGUI _levelNumberText;
     
     [SerializeField] private int _timeBeforeStart = 5;
@@ -29,7 +28,7 @@ public class LevelManager : MonoBehaviour
 
     private int _busCounter = 0;
 
-    public bool ReadyToPlay = false;
+    [HideInInspector] public bool ReadyToPlay = false;
     private bool _started = false;
     private bool _countDownEnded = false;
     
@@ -44,10 +43,8 @@ public class LevelManager : MonoBehaviour
         Instance = this;
 
         _timerIntCounter = _timeBeforeStart;
-        
-        Data = _forceSceneNumber == 0 ? 
-            SceneHandler.Instance.GetCurrentLevelData():           
-            SceneHandler.Instance.Levels[_forceSceneNumber - 1];
+
+        Data = SceneHandler.Instance.GetCurrentLevelData();
     }
 
     private void Start()
