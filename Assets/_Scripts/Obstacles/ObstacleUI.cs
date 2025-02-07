@@ -27,6 +27,8 @@ public class ObstacleUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _unlockLevelText;
     private bool _isLocked;
 
+    [SerializeField] private GameObject _lockPanel;
+
     private void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
@@ -67,6 +69,11 @@ public class ObstacleUI : MonoBehaviour
 
     private void Update()
     {
+        if (CatBellManager.Instance.CatBellAmount < RelatedObstacle.CatBellCost)
+            _lockPanel.SetActive(true);
+        else if (CatBellManager.Instance.CatBellAmount >= RelatedObstacle.CatBellCost)
+            _lockPanel.SetActive(false);
+        
         if (!_isDragged || _obstaclePreview == null) return;
         
         SnapPreviewOnGrid();
