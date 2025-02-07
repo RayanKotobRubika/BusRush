@@ -30,7 +30,7 @@ public class ObstacleUI : MonoBehaviour
     private void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
-        _image = GetComponent<Image>();
+        _image = GetComponentInChildren<Image>();
         _image.sprite = ObstacleSprite;
     }
 
