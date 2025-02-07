@@ -5853,6 +5853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cat_LoadingScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 3288124631135499176, guid: 8c5cb0abb07f27d44b446a95fd53e35f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6073433146175647780, guid: 8c5cb0abb07f27d44b446a95fd53e35f, type: 3}
       propertyPath: Duration
       value: 0.25

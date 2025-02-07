@@ -161,6 +161,7 @@ public class ObstacleUI : MonoBehaviour
             Instantiate(RelatedObstacle, _obstaclePreview.transform.position, Quaternion.identity, ObstacleManager.Instance.ObstaclesParent);
             CatBellManager.Instance.PlacedObstacle(RelatedObstacle.CatBellCost);
             OnObstaclePlaced?.Invoke(RelatedObstacle);
+            if (TutorialManager.Instance != null) TutorialManager.Instance.DestroyTutorial();
         }
         Destroy(_obstaclePreview);
         

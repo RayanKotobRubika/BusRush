@@ -1,10 +1,19 @@
 # ninja log v5
+1956	2211	7602912484744957	D:/Dev/UnityProjects/BusRush/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1r685n6o/obj/arm64-v8a/libgame.so	7e521f3c9a194166
 113	1575	7602912478187269	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	ecdd426b4771e095
+89	1695	7602912479417384	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	3f2979613161e87b
 17	1597	7602912478419477	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	60be322684acb003
+70	1745	7602912479908195	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	e12aef9033b8b5e9
 135	1633	7602912478777311	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	448224ee759f0b83
 52	1682	7602912479272860	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	54b3836ec3a2a49d
-89	1695	7602912479417384	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	3f2979613161e87b
-70	1745	7602912479908195	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	e12aef9033b8b5e9
 34	1879	7602912481255237	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b0d20fb42cad084c
 0	1956	7602912482051495	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	3c6f29ff72683f8f
-1956	2211	7602912484744957	D:/Dev/UnityProjects/BusRush/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1r685n6o/obj/arm64-v8a/libgame.so	7e521f3c9a194166
+103	1538	7606512580347469	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	ecdd426b4771e095
+23	1546	7606512580986176	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	60be322684acb003
+154	1553	7606512580995721	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	448224ee759f0b83
+128	1654	7606512582082912	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	3f2979613161e87b
+62	1660	7606512582082912	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	54b3836ec3a2a49d
+42	1760	7606512583192541	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	e12aef9033b8b5e9
+82	1839	7606512583970463	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b0d20fb42cad084c
+4	1936	7606512584979646	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	3c6f29ff72683f8f
+1936	2222	7606512587945063	D:/Dev/UnityProjects/BusRush/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1r685n6o/obj/arm64-v8a/libgame.so	7e521f3c9a194166

@@ -15,7 +15,7 @@ public class SceneHandler : MonoBehaviour
     [SerializeField] private float _transitionTime = 1f;
     
     [SerializeField] private Slider _progressBar;
-    private CatLoadingAnimator _loadingScreenPassengers;
+    //private CatLoadingAnimator _loadingScreenPassengers;
 
     [SerializeField] private Image _panel;
 
@@ -47,8 +47,8 @@ public class SceneHandler : MonoBehaviour
             _currentLevel = 0;
         }
         
-        _loadingScreenPassengers = FindFirstObjectByType<CatLoadingAnimator>();
-        _loadingScreenPassengers.ScaleDown();
+        // _loadingScreenPassengers = FindFirstObjectByType<CatLoadingAnimator>();
+        // _loadingScreenPassengers.ScaleDown();
     }
 
     private void Start()
@@ -80,7 +80,7 @@ public class SceneHandler : MonoBehaviour
         
         _animator.SetTrigger("TrStart");
         
-        _loadingScreenPassengers.ScaleUp();
+        //_loadingScreenPassengers.ScaleUp();
 
         _currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
         
@@ -95,9 +95,9 @@ public class SceneHandler : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
         
-        _loadingScreenPassengers = FindFirstObjectByType<CatLoadingAnimator>();
-        
-        _loadingScreenPassengers.ScaleDown();
+        // _loadingScreenPassengers = FindFirstObjectByType<CatLoadingAnimator>();
+        //
+        // _loadingScreenPassengers.ScaleDown();
         
         yield return new WaitForSeconds(_transitionTime);
 

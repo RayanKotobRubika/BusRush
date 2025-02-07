@@ -117,7 +117,11 @@ public class LevelManager : MonoBehaviour
 
     private void TutorialLogic()
     {
-        if (_enemiesTutorialSpawnData.Count <= 0) return;
+        if (_enemiesTutorialSpawnData.Count <= 0)
+        {
+            _enemiesTutorialSpawnData = new List<Vector3>(Data.PassengersColorRatesPerBus);
+            _spawnTimer = 0;
+        }
         
         _spawnTimer += Time.deltaTime;
 
