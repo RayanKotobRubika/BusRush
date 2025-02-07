@@ -625,7 +625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 4270770301904429195, guid: 3bdfe0b61bd0d514aad5a19f179a89e0, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 1133905675, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 708769341}
   _gridTileLayer:
     serializedVersion: 2
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
+  m_Sprite: {fileID: 1133905675, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -760,7 +760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 5303738332828666216, guid: 89fb2b7968dfa364d99c9d7c0fd7ad71, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: -952725983, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -1837926277, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1201282058}
   _gridTileLayer:
     serializedVersion: 2
@@ -787,7 +787,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -952725983, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  m_Sprite: {fileID: -1837926277, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -857,7 +857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 480697074660701892, guid: 76e8097179d9bea40b402bc809bd9b50, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -1586788207, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1939879012}
   _gridTileLayer:
     serializedVersion: 2
@@ -1536,7 +1536,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1567417101}
   m_Father: {fileID: 1050341994}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &165112434
@@ -3367,7 +3368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 405317f2ca6af164ca1d959c67133785, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3437,7 +3438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: 4ca84943a16cb194ab334a3a2aa1d7b6, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: -1404457278, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 1577876090, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1153960462}
   _gridTileLayer:
     serializedVersion: 2
@@ -3909,7 +3910,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3984,7 +3985,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4482,7 +4483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5447,7 +5448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6237,6 +6238,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 398912430}
+  - {fileID: 1926652398}
   m_Father: {fileID: 949947572}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6541,7 +6543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 7962462066160482468, guid: 348a189e9fe743c4e976d5cd724bf3a3, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 1211740430, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -81336338, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1133831144}
   _gridTileLayer:
     serializedVersion: 2
@@ -6638,7 +6640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 7676029448951723364, guid: 745a57cd8c63b6647bacbc782a80ae29, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: -269149755, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -151198404, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 184272920}
   _gridTileLayer:
     serializedVersion: 2
@@ -6665,7 +6667,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -269149755, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  m_Sprite: {fileID: -151198404, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6841,7 +6843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 3055499499512175319, guid: 159d11dfc829a75418666888074fc7ce, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: -322401596, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: -1825736693, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 560919566}
   _gridTileLayer:
     serializedVersion: 2
@@ -6868,7 +6870,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -322401596, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  m_Sprite: {fileID: -1825736693, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7157,7 +7159,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7260,7 +7262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: abb8c4afe08ad4c4faaf72f38246b886, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 1042653282, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 1816950459, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 2133722457}
   _gridTileLayer:
     serializedVersion: 2
@@ -7287,7 +7289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1042653282, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  m_Sprite: {fileID: 1816950459, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8148,8 +8150,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.93499756, y: 0.3149948}
+  m_SizeDelta: {x: 1.869921, y: 4.110012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972940897
 MonoBehaviour:
@@ -8349,7 +8351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 179580690573911667, guid: 87e2ed5263dbd08438f8ab151a6a4953, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 1055780874, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1465710664}
   _gridTileLayer:
     serializedVersion: 2
@@ -8376,7 +8378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a3417b80779ac0a49951a006747a5bd9, type: 3}
+  m_Sprite: {fileID: 1055780874, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8951,7 +8953,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9026,8 +9028,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1610263849, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 405317f2ca6af164ca1d959c67133785, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -9885,7 +9887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 1876005871584968990, guid: 0ff0f0f5825f2cb429d14fa9f29b79c4, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: -956871079, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 1883214715, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 623072877}
   _gridTileLayer:
     serializedVersion: 2
@@ -10239,7 +10241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10598,7 +10600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 3700644609064170710, guid: 3d1c2f0dd9442d641b8f327b84a19a22, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: -553582080, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 1788155642, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 360271073}
   _gridTileLayer:
     serializedVersion: 2
@@ -10625,7 +10627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -553582080, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  m_Sprite: {fileID: 1788155642, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10731,7 +10733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12926,7 +12928,7 @@ MonoBehaviour:
   - {fileID: 3583182940590311236, guid: 6372aea4bf24429439493a88ed4cf50b, type: 3}
   - {fileID: 333216596128167679, guid: 9d481a1d145b2324abcfa60f88694c72, type: 3}
   - {fileID: 7783352090824478015, guid: 472e6296d8d798b4382936e3deb72bda, type: 3}
-  _passengerContainer: {fileID: 1951710729}
+  <PassengerContainer>k__BackingField: {fileID: 0}
 --- !u!1 &1465710662
 GameObject:
   m_ObjectHideFlags: 0
@@ -13722,7 +13724,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13740,6 +13742,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536270579}
   m_CullTransparentMesh: 1
+--- !u!1 &1567417100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1567417101}
+  m_Layer: 0
+  m_Name: Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1567417101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567417100}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 165112433}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576093528
 GameObject:
   m_ObjectHideFlags: 0
@@ -15152,7 +15185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: 188f0162382564a418b4782cc315d550, type: 3}
   <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
-  <ObstacleSprite>k__BackingField: {fileID: 1258242896, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  <ObstacleSprite>k__BackingField: {fileID: 1577095592, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 433461453}
   _gridTileLayer:
     serializedVersion: 2
@@ -15179,7 +15212,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1258242896, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
+  m_Sprite: {fileID: 1577095592, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15599,6 +15632,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912339350}
+  m_CullTransparentMesh: 1
+--- !u!1 &1926652397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1926652398}
+  - component: {fileID: 1926652400}
+  - component: {fileID: 1926652399}
+  m_Layer: 5
+  m_Name: FPS (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1926652398
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926652397}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 726750849}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 176, y: 700}
+  m_SizeDelta: {x: 200, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1926652399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926652397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 1b5c9a7370e424d53a1b8a999cf54a02, type: 2}
+  m_sharedMaterial: {fileID: 7512481295523713106, guid: 1b5c9a7370e424d53a1b8a999cf54a02, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 25
+  m_fontSizeBase: 25
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1926652400
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926652397}
   m_CullTransparentMesh: 1
 --- !u!1 &1933368427
 GameObject:
@@ -16198,7 +16367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16291,57 +16460,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036282861}
   m_CullTransparentMesh: 1
---- !u!1 &2038228688
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2038228689}
-  - component: {fileID: 2038228690}
-  m_Layer: 0
-  m_Name: FPSCounter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2038228689
+--- !u!4 &2038228689 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+  m_PrefabInstance: {fileID: 4633642184887413337}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038228688}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1050341994}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2038228690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038228688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9797e0c3260a4d24aa9cfc32922dde10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 398912431}
-  badColor: {r: 1, g: 0, b: 0, a: 1}
-  neutralColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  goodColor: {r: 0, g: 1, b: 1, a: 1}
-  badValue: 50
-  neutralValue: 60
-  fps: 0
 --- !u!1 &2038703613
 GameObject:
   m_ObjectHideFlags: 0
@@ -17105,7 +17228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17589,7 +17712,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4977dca38337eff4fb6b9244e49583bb, type: 3}
+  m_Sprite: {fileID: 67205630, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17794,6 +17917,71 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &4633642184887413337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1050341994}
+    m_Modifications:
+    - target: {fileID: 2835518818944895435, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 398912431}
+    - target: {fileID: 2835518818944895435, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: text2
+      value: 
+      objectReference: {fileID: 1926652399}
+    - target: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199462066993740061, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9083922129883136541, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
+      propertyPath: m_Name
+      value: FPSCounter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1ae746a4ed4af3488c339277ee33d28, type: 3}
 --- !u!1001 &5817026412415391076
 PrefabInstance:
   m_ObjectHideFlags: 0

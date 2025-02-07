@@ -5,6 +5,7 @@ using UnityEngine;
 public class FPSCounter : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI text;
+    [SerializeField] private TextMeshProUGUI text2;
   
     [SerializeField] Color badColor = Color.red;
     [SerializeField] Color neutralColor = Color.yellow;
@@ -21,14 +22,15 @@ public class FPSCounter : MonoBehaviour
     float                  frames;
     float                  timeLeft;
 
-    private void Awake()
+    private void Start()
     {
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 400;
+        Application.targetFrameRate = Screen.currentResolution.refreshRate;
     }
 
     void Update()
     {
+        text2.text = Screen.currentResolution.refreshRate.ToString();
         timeLeft -= Time.deltaTime;
         accum    += Time.timeScale / Time.deltaTime;
         ++frames;
