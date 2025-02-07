@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c2611ef1e527e4c86198b88aa4efb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _touchOrDragThreshold: 0.1
+  _touchOrDragThreshold: 0.05
