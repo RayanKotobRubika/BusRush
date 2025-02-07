@@ -1192,6 +1192,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8519137381002836529, guid: 35748c358539eea4685f4cfcc6d3347d, type: 3}
   m_PrefabInstance: {fileID: 3949738736075555128}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1450902596 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7817635366736295366, guid: 35748c358539eea4685f4cfcc6d3347d, type: 3}
+  m_PrefabInstance: {fileID: 3949738736075555128}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450902594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e30b65001763274bb9b05121e9b4c3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1658770114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7cb15ebbf6d964e9b5a5592ba0ffce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settingsPanel: {fileID: 1450902594}
+  _settingsPanel: {fileID: 1450902596}
+  _carAndCat: {fileID: 1901395533}
   _bouncyScale: 1.1
   _bounceDuration: 0.15
   _levelText: {fileID: 824995812}
@@ -1829,6 +1841,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2017609517566805851, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1003330161}
     - target: {fileID: 5271096030784225593, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

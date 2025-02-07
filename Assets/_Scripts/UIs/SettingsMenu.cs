@@ -13,6 +13,8 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField] private float _bounceDuration;
     
     [SerializeField] private GameObject _creditsPanel;
+    
+    public bool IsSettingsActive { get; private set; }
 
     private void OnEnable()
     {
@@ -24,6 +26,8 @@ public class SettingsMenu : MonoBehaviour
         
         _activatedSfxButton.SetActive(activeSfx);
         _deactivatedSfxButton.SetActive(!activeSfx);
+
+        IsSettingsActive = true;
     }
 
     public void ToggleMusic(bool setActive)
@@ -61,5 +65,7 @@ public class SettingsMenu : MonoBehaviour
     public void CloseSettings()
     {
         gameObject.SetActive(false);
+
+        IsSettingsActive = false;
     }
 }
