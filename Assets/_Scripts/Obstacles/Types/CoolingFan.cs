@@ -4,7 +4,15 @@ using UnityEngine;
 public class CoolingFan : Obstacle
 {
     [SerializeField] private float _pushStrength;
-    
+    [SerializeField] private ParticleSystem _windEfect;
+    [SerializeField] private ParticleSystem _buildEffect;
+
+    private void Start()
+    {
+        _windEfect.Play();
+        _buildEffect.Play();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (!other.TryGetComponent(out Passenger passenger)) return;

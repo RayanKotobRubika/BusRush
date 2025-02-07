@@ -49,6 +49,23 @@ public static class CoroutineUtils
         target.position = targetPosition;
     }
     
+    public static IEnumerator MoveRectTransform(RectTransform rectTransform, Vector2 startPos, Vector2 endPos, float duration)
+    {
+        float elapsedTime = 0f;
+        rectTransform.anchoredPosition = startPos;
+        
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / duration;
+            t = t * t * (3f - 2f * t); // Smoothstep easing (ease in-out)
+            rectTransform.anchoredPosition = Vector2.Lerp(startPos, endPos, t);
+            yield return null;
+        }
+        
+        rectTransform.anchoredPosition = endPos;
+    }
+    
     public static IEnumerator EaseInOutMoveUI(RectTransform target, Vector3 targetPosition, float duration)
     {
         Vector3 startPosition = target.anchoredPosition;

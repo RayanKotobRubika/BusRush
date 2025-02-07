@@ -19,6 +19,7 @@ public class PlusText : MonoBehaviour
 
     [SerializeField] private float _scaleFactor;
     [SerializeField] private float _scaleDuration;
+    [SerializeField] private float _maxScale = 3;
     private Vector3 _initialScale;
 
     private void Awake()
@@ -51,7 +52,8 @@ public class PlusText : MonoBehaviour
         _rectTransform.position = _initialPosition;
         StartCoroutine(CoroutineUtils.EaseInOutMoveUI(_rectTransform,
             _rectTransform.anchoredPosition + Vector2.up * _yOffsetMovement, _upMotionDuration));
-        StartCoroutine(CoroutineUtils.BouncyScale(_rectTransform, _scaleFactor, _scaleDuration, true));
+        if (_rectTransform.localScale.x < _maxScale)
+            StartCoroutine(CoroutineUtils.BouncyScale(_rectTransform, _scaleFactor, _scaleDuration, true));
         _activityTimer = _activityTime;
     }
     
