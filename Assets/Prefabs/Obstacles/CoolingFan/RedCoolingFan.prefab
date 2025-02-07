@@ -76,6 +76,8 @@ MonoBehaviour:
   <CatBellCost>k__BackingField: 20
   <LifeTime>k__BackingField: 2
   _pushStrength: 10
+  _windEfect: {fileID: 3156364707231642171}
+  _buildEffect: {fileID: 2285126286370812953}
 --- !u!1001 &1019741150190444273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,6 +176,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1165665710153683700, guid: 7d2d1afb4ac73d9458503be36a236e06, type: 3}
   m_PrefabInstance: {fileID: 1019741150190444273}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &2285126286370812953 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1265721967176657640, guid: 7d2d1afb4ac73d9458503be36a236e06, type: 3}
+  m_PrefabInstance: {fileID: 1019741150190444273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2912409795478233444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -247,6 +254,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 101a15bb0412b624ca1ad03cc105c13b, type: 3}
+--- !u!198 &3156364707231642171 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 263282170221957983, guid: 101a15bb0412b624ca1ad03cc105c13b, type: 3}
+  m_PrefabInstance: {fileID: 2912409795478233444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6524120017690993599 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8277794037308949211, guid: 101a15bb0412b624ca1ad03cc105c13b, type: 3}

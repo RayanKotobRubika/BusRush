@@ -111,7 +111,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0, z: -0.6}
 --- !u!114 &7676029448951723364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +129,7 @@ MonoBehaviour:
   <CatBellCost>k__BackingField: 40
   <LifeTime>k__BackingField: 5
   _bumpForce: 20
+  _buildEffect: {fileID: 1365254097945296653}
 --- !u!1001 &1282464401645851715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -293,6 +294,11 @@ PrefabInstance:
 --- !u!4 &159691159024309761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1510072555278309888, guid: 824c877fe20588049843add44ae5bb6a, type: 3}
+  m_PrefabInstance: {fileID: 1640309438390995969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1365254097945296653 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 302260007975056140, guid: 824c877fe20588049843add44ae5bb6a, type: 3}
   m_PrefabInstance: {fileID: 1640309438390995969}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2651520691149791225

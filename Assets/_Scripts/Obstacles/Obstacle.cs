@@ -11,7 +11,7 @@ public class Obstacle : MonoBehaviour
     [field:SerializeField] public float LifeTime { get; private set; }
     private float _lifeTimer;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         IsPlaced = false;
         _lifeTimer = LifeTime;

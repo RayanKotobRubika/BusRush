@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 [DefaultExecutionOrder(-3)]
 public class SceneHandler : MonoBehaviour
@@ -13,6 +15,11 @@ public class SceneHandler : MonoBehaviour
     [SerializeField] private float _transitionTime = 1f;
     
     [SerializeField] private Slider _progressBar;
+    private CatLoadingAnimator _loadingScreenPassengers;
+
+    [SerializeField] private Image _panel;
+
+    [SerializeField] private List<Material> _loadingScreenMaterials;
 
     [field:SerializeField] public List<LevelData> Levels { get; private set; }
     private int _currentLevel;
@@ -39,6 +46,14 @@ public class SceneHandler : MonoBehaviour
             PlayerPrefs.Save();
             _currentLevel = 0;
         }
+        
+        _loadingScreenPassengers = FindFirstObjectByType<CatLoadingAnimator>();
+        _loadingScreenPassengers.ScaleDown();
+    }
+
+    private void Start()
+    {
+        _panel.material = _loadingScreenMaterials[Random.Range(0, 3)];
     }
 
     public async void LoadScene(string sceneName)
@@ -61,7 +76,11 @@ public class SceneHandler : MonoBehaviour
 
     public IEnumerator LoadLevel(string sceneName)
     {
+        _panel.material = _loadingScreenMaterials[Random.Range(0, 3)];
+        
         _animator.SetTrigger("TrStart");
+        
+        _loadingScreenPassengers.ScaleUp();
 
         _currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
         
@@ -73,6 +92,12 @@ public class SceneHandler : MonoBehaviour
     public IEnumerator FadeOut()
     {
         _animator.SetTrigger("TrEnd");
+
+        yield return new WaitForSeconds(0.1f);
+        
+        _loadingScreenPassengers = FindFirstObjectByType<CatLoadingAnimator>();
+        
+        _loadingScreenPassengers.ScaleDown();
         
         yield return new WaitForSeconds(_transitionTime);
 

@@ -127,6 +127,7 @@ MonoBehaviour:
   <Dimensions>k__BackingField: {x: 2, y: 2}
   <CatBellCost>k__BackingField: 30
   <LifeTime>k__BackingField: 5
+  _buildEffect: {fileID: 1133843859778207692}
 --- !u!1001 &2174261806500893988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -223,6 +224,11 @@ PrefabInstance:
 --- !u!4 &1009300402954242000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1165665710153683700, guid: 7d2d1afb4ac73d9458503be36a236e06, type: 3}
+  m_PrefabInstance: {fileID: 2174261806500893988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1133843859778207692 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1265721967176657640, guid: 7d2d1afb4ac73d9458503be36a236e06, type: 3}
   m_PrefabInstance: {fileID: 2174261806500893988}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8279056795556272807

@@ -1,9 +1,24 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class SpringTrap : Obstacle
 {
     [SerializeField] private float _bumpForce;
+    [SerializeField] private ParticleSystem _buildEffect;
+    [SerializeField] private Animator[] _animators;
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        _animators = GetComponentsInChildren<Animator>();
+    }
+
+    private void Start()
+    {
+        _buildEffect.Play();
+    }
     
     private void OnTriggerEnter(Collider other)
     {
@@ -25,6 +40,11 @@ public class SpringTrap : Obstacle
         passenger.RB.AddForce(ejectionDirection * _bumpForce, ForceMode.Impulse);
         Vector3 randomTorqueDirection = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         passenger.RB.AddTorque(randomTorqueDirection * _bumpForce, ForceMode.Impulse);
+
+        foreach (Animator a in _animators)
+        {
+            a.SetTrigger("TrBump");
+        }
         
         Destroy(passenger.gameObject,2f);
         Destroy(passenger);

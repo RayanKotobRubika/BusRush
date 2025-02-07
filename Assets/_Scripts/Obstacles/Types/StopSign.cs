@@ -2,6 +2,13 @@ using UnityEngine;
 
 public class StopSign : Obstacle
 {
+    [SerializeField] private ParticleSystem _buildEffect;
+
+    private void Start()
+    {
+        _buildEffect.Play();
+    }
+    
     private void OnTriggerEnter(Collider other)
     {
         if (!other.TryGetComponent(out Passenger passenger)) return;
