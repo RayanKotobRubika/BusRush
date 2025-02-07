@@ -1833,58 +1833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SceneHandler
       objectReference: {fileID: 0}
-    - target: {fileID: 179454026694220914, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2017609517566805851, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1003330161}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: <Levels>k__BackingField.Array.size
-      value: 31
-      objectReference: {fileID: 0}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: '<Levels>k__BackingField.Array.data[21]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 2c9e81ab230e6234ba4c5445ee3fa8e2, type: 2}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: '<Levels>k__BackingField.Array.data[22]'
-      value: 
-      objectReference: {fileID: 11400000, guid: f7841904a601bae4fb0aecf77a10cbd9, type: 2}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: '<Levels>k__BackingField.Array.data[23]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 2498a529c37a70641b86b7a0b523ea65, type: 2}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: '<Levels>k__BackingField.Array.data[24]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 39441e63987bd594fa6420f83defc81a, type: 2}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: '<Levels>k__BackingField.Array.data[25]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 8713cbbdb480c9e4db3f24eabb8063ae, type: 2}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: '<Levels>k__BackingField.Array.data[26]'
-      value: 
-      objectReference: {fileID: 11400000, guid: be4466bdcbdbed8499f5a309508c76dc, type: 2}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: '<Levels>k__BackingField.Array.data[27]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 12f989f4f609fdd4ca75d91531c4a01f, type: 2}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: '<Levels>k__BackingField.Array.data[28]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 221d910938cdca941bc2cff91e654e19, type: 2}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: '<Levels>k__BackingField.Array.data[29]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 732b72fbd1bd2194b91068ed2811081a, type: 2}
-    - target: {fileID: 2412301413611115467, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
-      propertyPath: '<Levels>k__BackingField.Array.data[30]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 797af4331085e1c4cba7b5927ae97f61, type: 2}
     - target: {fileID: 5271096030784225593, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
