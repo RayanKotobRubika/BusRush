@@ -25,7 +25,7 @@ public class FPSCounter : MonoBehaviour
     private void Start()
     {
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = Screen.currentResolution.refreshRate;
     }
 
     void Update()
