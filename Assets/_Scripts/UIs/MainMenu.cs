@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject _settingsPanel;
+    [SerializeField] private SettingsMenu _settingsPanel;
+    [SerializeField] private GameObject _carAndCat;
 
     [SerializeField] private float _bouncyScale;
     [SerializeField] private float _bounceDuration;
@@ -29,11 +30,21 @@ public class MainMenu : MonoBehaviour
     {
         if (!AudioManager.Instance.MusicSource.isPlaying)
             AudioManager.Instance.PlayMusic("Menu");
+
+        switch (_settingsPanel.IsSettingsActive)
+        {
+            case true when _carAndCat.activeInHierarchy:
+                _carAndCat.SetActive(false);
+                break;
+            case false when !_carAndCat.activeInHierarchy:
+                _carAndCat.SetActive(true);
+                break;
+        }
     }
 
     public void OpenSettings()
     {
-        _settingsPanel.SetActive(true);
+        _settingsPanel.gameObject.SetActive(true);
     }
 
     public void BounceButton(Transform buttonTransform)

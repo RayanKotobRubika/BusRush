@@ -525,7 +525,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rayan EL KOTOB
+  m_text: EL KOTOB Rayan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 55d9daa34bc79db4d85fa3d6d900cbc7, type: 2}
   m_sharedMaterial: {fileID: 4439146198039530300, guid: 55d9daa34bc79db4d85fa3d6d900cbc7, type: 2}
@@ -2029,7 +2029,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Adelle et Samuel
+  m_text: GHYS Adelle - SELAMI Samuel
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 55d9daa34bc79db4d85fa3d6d900cbc7, type: 2}
   m_sharedMaterial: {fileID: 4439146198039530300, guid: 55d9daa34bc79db4d85fa3d6d900cbc7, type: 2}
@@ -2244,7 +2244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Martin et Syprien
+  m_text: THULLIER Martin - SEMERIA Syprien
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 55d9daa34bc79db4d85fa3d6d900cbc7, type: 2}
   m_sharedMaterial: {fileID: 4439146198039530300, guid: 55d9daa34bc79db4d85fa3d6d900cbc7, type: 2}
