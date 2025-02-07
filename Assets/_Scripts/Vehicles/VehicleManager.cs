@@ -22,6 +22,8 @@ public class VehicleManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _remainingVehiclesText;
 
+    [SerializeField] private int _planeCapacity = 30;
+
     private int _remainingVehicles;
     
     private void Awake()
@@ -79,6 +81,7 @@ public class VehicleManager : MonoBehaviour
 
         if (CurrentVehicles[0].CurrentPassengers >= CurrentVehicles[0].Capacity && CurrentVehicles[0] != null)
         {
+            if (CurrentVehicles[0].Capacity == _planeCapacity) PlaneUIManager.Instance.CreatePlaneUI();
             MoveAllVehicles();
             _remainingVehicles--;
         }

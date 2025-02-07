@@ -53,6 +53,7 @@ MonoBehaviour:
   <TakesAllColors>k__BackingField: 1
   _bouncyScaleFactor: 1.2
   _bounceDuration: 0.15
+  _maxSize: 1.5
   _movementSpeed: 5
   _remainingPassengersText: {fileID: 3383413706343775562}
 --- !u!95 &680513152259132223

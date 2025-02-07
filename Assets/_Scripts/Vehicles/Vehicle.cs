@@ -13,7 +13,7 @@ public class Vehicle : MonoBehaviour
 
     [SerializeField] private float _bouncyScaleFactor;
     [SerializeField] private float _bounceDuration;
-    private Vector3 _originalScale;
+    [SerializeField] private float _maxSize;
 
     [SerializeField] private float _movementSpeed;
 
@@ -21,14 +21,6 @@ public class Vehicle : MonoBehaviour
 
     private Coroutine _upAndDownCoroutine;
     private bool _startedCoroutine;
-
-    private void Awake()
-    {
-        _originalScale = transform.localScale;
-    }
-
-    private void Start()
-    {}
 
     private void Update()
     {
@@ -41,7 +33,8 @@ public class Vehicle : MonoBehaviour
     public void AddPassenger()
     {
         CurrentPassengers++;
-        StartCoroutine(CoroutineUtils.BouncyScale(transform, _bouncyScaleFactor, _bounceDuration, true));
+        if (transform.localScale.x < _maxSize)
+            StartCoroutine(CoroutineUtils.BouncyScale(transform, _bouncyScaleFactor, _bounceDuration, true));
     }
 
     public void MoveVehicle(Vector3 targetPos)
