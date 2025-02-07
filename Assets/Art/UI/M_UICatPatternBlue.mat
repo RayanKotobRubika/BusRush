@@ -49,7 +49,7 @@ Material:
     - _Float: 0.18
     - _Float_1: 0.51
     - _HoritontalScroll: 0.2
-    - _HorizontalSpeed: 0
+    - _HorizontalSpeed: -0.01
     - _PatternOpacity: 0
     - _Stencil: 0
     - _StencilComp: 8
@@ -59,11 +59,11 @@ Material:
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
     - _VerticalScroll: 0.2
-    - _VerticalSpeed: 0
+    - _VerticalSpeed: -0.05
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.5019608, g: 0.7224152, b: 0.8509804, a: 1}
-    - _Tile: {r: 1, g: 1, b: 0, a: 0}
+    - _Color: {r: 0.36258456, g: 0.6330635, b: 0.7924528, a: 1}
+    - _Tile: {r: 0.45, g: 1, b: 0, a: 0}
     - _TilingTex: {r: 1, g: 1, b: 0, a: 0}
     - _Vector2: {r: 50, g: 50, b: 0, a: 0}
   m_BuildTextureStacks: []
