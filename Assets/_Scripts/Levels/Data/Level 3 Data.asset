@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c05f9e0ebccbb5488b8bf3ffeb705f9, type: 3}
   m_Name: Level 3 Data
   m_EditorClassIdentifier: 
+  <IsTutorial>k__BackingField: 0
   <LevelIndex>k__BackingField: 3
   <MaxRedCapacity>k__BackingField: 30
   <MaxGreenCapacity>k__BackingField: 30
@@ -20,11 +21,11 @@ MonoBehaviour:
   <DefaultGreenCapacity>k__BackingField: 0
   <DefaultBlueCapacity>k__BackingField: 0
   <VehicleList>k__BackingField:
+  - {fileID: 3831798318206814679, guid: 5490565c4a130ba4e9d1486145ec830b, type: 3}
   - {fileID: 7038607774340483396, guid: 128e475528d582e42b2c899fe5be7b79, type: 3}
   - {fileID: 7038607774340483396, guid: 4a8e52636757e7143866db9113647606, type: 3}
   - {fileID: 8506377958510113920, guid: 2f605046af9327e41a454266a0b7ad73, type: 3}
   - {fileID: 7038607774340483396, guid: 4a8e52636757e7143866db9113647606, type: 3}
-  - {fileID: 3831798318206814679, guid: 5490565c4a130ba4e9d1486145ec830b, type: 3}
   - {fileID: 8506377958510113920, guid: afff520722fe2bc469060c0df783feaa, type: 3}
   - {fileID: 7038607774340483396, guid: 99b330bc6676cb54ea62441ddcb78817, type: 3}
   - {fileID: 8506377958510113920, guid: e8f4e57b3c5c8ec43a9302ea9b2adbdd, type: 3}

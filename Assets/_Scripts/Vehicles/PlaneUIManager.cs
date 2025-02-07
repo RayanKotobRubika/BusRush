@@ -32,5 +32,7 @@ public class PlaneUIManager : MonoBehaviour
         rectTransform.anchoredPosition = _startPos;
 
         StartCoroutine(CoroutineUtils.MoveRectTransform(rectTransform, _startPos, _endPos, _duration));
+        
+        Destroy(plane, _duration + 0.5f);
     }
 }
