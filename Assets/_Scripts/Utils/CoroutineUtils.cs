@@ -155,4 +155,29 @@ public static class CoroutineUtils
             yield return null;
         }
     }
+    
+    public static Coroutine StartMovingLoop(MonoBehaviour caller, RectTransform target, Vector2 startPosition, Vector2 endPosition, float moveDuration, float freezeDuration)
+    {
+        return caller.StartCoroutine(MoveLoop(target, startPosition, endPosition, moveDuration, freezeDuration));
+    }
+
+    private static IEnumerator MoveLoop(RectTransform target, Vector2 startPosition, Vector2 endPosition, float moveDuration, float freezeDuration)
+    {
+        while (true)
+        {
+            target.anchoredPosition = startPosition;
+
+            float elapsedTime = 0f;
+            while (elapsedTime < moveDuration)
+            {
+                elapsedTime += Time.deltaTime;
+                float t = Mathf.SmoothStep(0, 1, elapsedTime / moveDuration); // Ease in-out
+                target.anchoredPosition = Vector2.Lerp(startPosition, endPosition, t);
+                yield return null;
+            }
+
+            target.anchoredPosition = endPosition;
+            yield return new WaitForSeconds(freezeDuration);
+        }
+    }
 }

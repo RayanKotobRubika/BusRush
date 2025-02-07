@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -28,6 +29,8 @@ public class ObstacleUI : MonoBehaviour
     private bool _isLocked;
 
     [SerializeField] private GameObject _lockPanel;
+    
+    public static event Action<Obstacle> OnObstaclePlaced;
 
     private void Awake()
     {
@@ -157,6 +160,7 @@ public class ObstacleUI : MonoBehaviour
         {
             Instantiate(RelatedObstacle, _obstaclePreview.transform.position, Quaternion.identity, ObstacleManager.Instance.ObstaclesParent);
             CatBellManager.Instance.PlacedObstacle(RelatedObstacle.CatBellCost);
+            OnObstaclePlaced?.Invoke(RelatedObstacle);
         }
         Destroy(_obstaclePreview);
         

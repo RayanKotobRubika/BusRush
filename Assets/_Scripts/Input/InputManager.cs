@@ -91,6 +91,8 @@ public class InputManager : MonoBehaviour
         _touchStartTime = (float)context.startTime;
         
         TouchOngoing = true;
+        _toucheOrDragTimer = _touchOrDragThreshold;
+        
         if (OnStartTouch != null) OnStartTouch(_touchStartPosition, _touchStartTime);
     }
     
@@ -104,5 +106,7 @@ public class InputManager : MonoBehaviour
             IsHolding = false;
             if (OnEndHold != null) OnEndHold(_touchControls.Touch.TouchPosition.ReadValue<Vector2>(), (float)context.time);
         }
+        
+        _toucheOrDragTimer = _touchOrDragThreshold;
     }
 }
