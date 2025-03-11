@@ -658,6 +658,8 @@ GameObject:
   m_Component:
   - component: {fileID: 78411615}
   - component: {fileID: 78411616}
+  - component: {fileID: 78411618}
+  - component: {fileID: 78411617}
   m_Layer: 5
   m_Name: CatGroupObstacleUI
   m_TagString: Untagged
@@ -698,15 +700,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 4270770301904429195, guid: 3bdfe0b61bd0d514aad5a19f179a89e0, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 1133905675, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 708769341}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &78411617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78411614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 73637810}
   _unlockLevelText: {fileID: 53056003}
   _lockPanel: {fileID: 222613140}
+--- !u!114 &78411618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78411614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &95022415
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,6 +781,8 @@ GameObject:
   m_Component:
   - component: {fileID: 99514708}
   - component: {fileID: 99514709}
+  - component: {fileID: 99514711}
+  - component: {fileID: 99514710}
   m_Layer: 5
   m_Name: StopSignObstacleUI
   m_TagString: Untagged
@@ -795,15 +823,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 5303738332828666216, guid: 89fb2b7968dfa364d99c9d7c0fd7ad71, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: -1837926277, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1201282058}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &99514710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99514707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 1284165369}
   _unlockLevelText: {fileID: 1259715751}
   _lockPanel: {fileID: 216093230}
+--- !u!114 &99514711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99514707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &110795174
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +866,8 @@ GameObject:
   m_Component:
   - component: {fileID: 110795175}
   - component: {fileID: 110795176}
+  - component: {fileID: 110795178}
+  - component: {fileID: 110795177}
   m_Layer: 5
   m_Name: CatGroupObstacleUI
   m_TagString: Untagged
@@ -854,15 +908,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 480697074660701892, guid: 76e8097179d9bea40b402bc809bd9b50, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: -1586788207, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1939879012}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &110795177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110795174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 275996247}
   _unlockLevelText: {fileID: 1250228808}
   _lockPanel: {fileID: 1945419311}
+--- !u!114 &110795178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110795174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &124155650
 GameObject:
   m_ObjectHideFlags: 0
@@ -3890,6 +3968,8 @@ GameObject:
   m_Component:
   - component: {fileID: 411244603}
   - component: {fileID: 411244604}
+  - component: {fileID: 411244606}
+  - component: {fileID: 411244605}
   m_Layer: 5
   m_Name: CoolingFanObstacleUI
   m_TagString: Untagged
@@ -3930,15 +4010,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: 4ca84943a16cb194ab334a3a2aa1d7b6, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 1577876090, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1153960462}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &411244605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411244602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 551886010}
   _unlockLevelText: {fileID: 1218536866}
   _lockPanel: {fileID: 1407320301}
+--- !u!114 &411244606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411244602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &413120405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4887,7 +4991,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482982414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.000021371614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4895,7 +4999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &482982416
@@ -7236,6 +7340,8 @@ GameObject:
   m_Component:
   - component: {fileID: 745542794}
   - component: {fileID: 745542795}
+  - component: {fileID: 745542797}
+  - component: {fileID: 745542796}
   m_Layer: 5
   m_Name: StopSignObstacleUI
   m_TagString: Untagged
@@ -7276,15 +7382,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 7962462066160482468, guid: 348a189e9fe743c4e976d5cd724bf3a3, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: -81336338, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1133831144}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &745542796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745542793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 1953230733}
   _unlockLevelText: {fileID: 23360685}
   _lockPanel: {fileID: 342224775}
+--- !u!114 &745542797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745542793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &784080663
 GameObject:
   m_ObjectHideFlags: 0
@@ -7295,6 +7425,8 @@ GameObject:
   m_Component:
   - component: {fileID: 784080664}
   - component: {fileID: 784080665}
+  - component: {fileID: 784080667}
+  - component: {fileID: 784080666}
   m_Layer: 5
   m_Name: SpringTrapObstacleUI
   m_TagString: Untagged
@@ -7335,15 +7467,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 7676029448951723364, guid: 745a57cd8c63b6647bacbc782a80ae29, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: -151198404, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 184272920}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &784080666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784080663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 1201055513}
   _unlockLevelText: {fileID: 706523995}
   _lockPanel: {fileID: 1020216281}
+--- !u!114 &784080667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784080663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &787341472
 GameObject:
   m_ObjectHideFlags: 0
@@ -7460,6 +7616,8 @@ GameObject:
   m_Component:
   - component: {fileID: 793969040}
   - component: {fileID: 793969041}
+  - component: {fileID: 793969043}
+  - component: {fileID: 793969042}
   m_Layer: 5
   m_Name: SpringTrapObstacleUI
   m_TagString: Untagged
@@ -7500,15 +7658,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 3055499499512175319, guid: 159d11dfc829a75418666888074fc7ce, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: -1825736693, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 560919566}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &793969042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793969039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 261123365}
   _unlockLevelText: {fileID: 1909752710}
   _lockPanel: {fileID: 883984052}
+--- !u!114 &793969043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793969039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &809682364
 GameObject:
   m_ObjectHideFlags: 0
@@ -7841,6 +8023,8 @@ GameObject:
   m_Component:
   - component: {fileID: 846478587}
   - component: {fileID: 846478588}
+  - component: {fileID: 846478590}
+  - component: {fileID: 846478589}
   m_Layer: 5
   m_Name: CoolingFanObstacleUI
   m_TagString: Untagged
@@ -7881,15 +8065,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: abb8c4afe08ad4c4faaf72f38246b886, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 1816950459, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 2133722457}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &846478589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846478586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 1855289569}
   _unlockLevelText: {fileID: 140464843}
   _lockPanel: {fileID: 1326239878}
+--- !u!114 &846478590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846478586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &852176264
 GameObject:
   m_ObjectHideFlags: 0
@@ -9119,6 +9327,8 @@ GameObject:
   m_Component:
   - component: {fileID: 991202770}
   - component: {fileID: 991202771}
+  - component: {fileID: 991202773}
+  - component: {fileID: 991202772}
   m_Layer: 5
   m_Name: CatGroupObstacleUI
   m_TagString: Untagged
@@ -9159,15 +9369,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 179580690573911667, guid: 87e2ed5263dbd08438f8ab151a6a4953, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 1055780874, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 1465710664}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &991202772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991202769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 1035913871}
   _unlockLevelText: {fileID: 1531946343}
   _lockPanel: {fileID: 1083504906}
+--- !u!114 &991202773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991202769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 4680613504041627411, guid: f1c9713f21ffdfc4cba572ffb9e21e96, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1010621011
 GameObject:
   m_ObjectHideFlags: 0
@@ -10854,6 +11088,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1170560582}
   - component: {fileID: 1170560583}
+  - component: {fileID: 1170560585}
+  - component: {fileID: 1170560584}
   m_Layer: 5
   m_Name: SpringTrapObstacleUI
   m_TagString: Untagged
@@ -10894,15 +11130,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 1876005871584968990, guid: 0ff0f0f5825f2cb429d14fa9f29b79c4, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 1883214715, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 623072877}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &1170560584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170560581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 1943293303}
   _unlockLevelText: {fileID: 2110312663}
   _lockPanel: {fileID: 1748728291}
+--- !u!114 &1170560585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170560581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: bb2422da14a6eb94e8571d30d0f52340, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1196265871
 GameObject:
   m_ObjectHideFlags: 0
@@ -11604,6 +11864,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1222807202}
   - component: {fileID: 1222807203}
+  - component: {fileID: 1222807205}
+  - component: {fileID: 1222807204}
   m_Layer: 5
   m_Name: StopSignObstacleUI
   m_TagString: Untagged
@@ -11644,15 +11906,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: 3700644609064170710, guid: 3d1c2f0dd9442d641b8f327b84a19a22, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 1788155642, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 360271073}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &1222807204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222807201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 95022415}
   _unlockLevelText: {fileID: 461124818}
   _lockPanel: {fileID: 2131518743}
+--- !u!114 &1222807205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222807201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 928690348969804243, guid: 0ba6cc389cf16664fbc64f3093321f19, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1227832024
 GameObject:
   m_ObjectHideFlags: 0
@@ -16835,6 +17121,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1870975119}
   - component: {fileID: 1870975120}
+  - component: {fileID: 1870975122}
+  - component: {fileID: 1870975121}
   m_Layer: 5
   m_Name: CoolingFanObstacleUI
   m_TagString: Untagged
@@ -16875,15 +17163,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <RelatedObstacle>k__BackingField: {fileID: -6812809445127193820, guid: 188f0162382564a418b4782cc315d550, type: 3}
-  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
   <ObstacleSprite>k__BackingField: {fileID: 1577095592, guid: fd4d829935c2b024b8a5039441261dcf, type: 3}
   <CostText>k__BackingField: {fileID: 433461453}
-  _gridTileLayer:
-    serializedVersion: 2
-    m_Bits: 256
+--- !u!114 &1870975121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870975118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd9e64c72119944ca8a09c9d390d949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _lockGroup: {fileID: 136127512}
   _unlockLevelText: {fileID: 2139722656}
   _lockPanel: {fileID: 1938846381}
+--- !u!114 &1870975122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870975118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffb1dfe30bf1e941b667c33db3bc26d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ObstaclePreview>k__BackingField: {fileID: 854391001885287260, guid: 572bc6f2c25db464b968a686a1c3b4b0, type: 3}
+  _gridTileLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1876106450
 GameObject:
   m_ObjectHideFlags: 0
