@@ -105,13 +105,15 @@ public class ObstaclePlacementHandler : MonoBehaviour
 
         _isSnapped = false;
 
-        if (!Physics.Raycast(pos1 + Vector3.up, Vector3.down, out RaycastHit hit1, 10f, _gridTileLayer)) return;
-        if (!Physics.Raycast(pos2 + Vector3.up, Vector3.down, out RaycastHit hit2, 10f, _gridTileLayer)) return;
+        RaycastHit[] hits = new RaycastHit[1];
+
+        if (Physics.RaycastNonAlloc(pos1 + Vector3.up, Vector3.down, hits, 10f, _gridTileLayer) == 0) return;
+        if (Physics.RaycastNonAlloc(pos2 + Vector3.up, Vector3.down, hits, 10f, _gridTileLayer) == 0) return;
         
         _obstaclePreview.transform.position = new Vector3(
-            hit1.transform.position.x + (_obstacleUI.RelatedObstacle.Dimensions.x - 1) / 2 * ObstacleManager.Instance.GridCellSize,
+            hits[0].transform.position.x + (_obstacleUI.RelatedObstacle.Dimensions.x - 1) / 2 * ObstacleManager.Instance.GridCellSize,
             ObstacleManager.Instance.ObstacleHeight, 
-            hit1.transform.position.z + (_obstacleUI.RelatedObstacle.Dimensions.y - 1) / 2 * ObstacleManager.Instance.GridCellSize
+            hits[0].transform.position.z + (_obstacleUI.RelatedObstacle.Dimensions.y - 1) / 2 * ObstacleManager.Instance.GridCellSize
         );
         
         _isSnapped = true;

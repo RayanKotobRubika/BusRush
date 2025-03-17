@@ -5914,7 +5914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 179454026694220914, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2017609517566805851, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
       propertyPath: m_Camera
@@ -5922,7 +5922,7 @@ PrefabInstance:
       objectReference: {fileID: 2141721873}
     - target: {fileID: 5271096030784225593, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5652148558095867051, guid: 107a09832da21384992b3714c13ec2c0, type: 3}
       propertyPath: m_LocalPosition.x
