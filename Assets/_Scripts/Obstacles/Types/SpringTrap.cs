@@ -6,7 +6,7 @@ public class SpringTrap : Obstacle
 {
     [SerializeField] private float _bumpForce;
     [SerializeField] private ParticleSystem _buildEffect;
-    [SerializeField] private Animator[] _animators;
+    private Animator[] _animators;
 
     protected override void Awake()
     {

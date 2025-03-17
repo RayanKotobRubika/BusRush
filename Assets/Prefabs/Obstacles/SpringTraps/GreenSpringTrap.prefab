@@ -125,11 +125,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Color>k__BackingField: 1
-  <Dimensions>k__BackingField: {x: 3, y: 1}
+  <Dimensions>k__BackingField: {x: 1, y: 1}
   <CatBellCost>k__BackingField: 40
   <LifeTime>k__BackingField: 5
   _bumpForce: 20
   _buildEffect: {fileID: 1671497663355948237}
+  _animators: []
 --- !u!1001 &1370094451024920513
 PrefabInstance:
   m_ObjectHideFlags: 0
