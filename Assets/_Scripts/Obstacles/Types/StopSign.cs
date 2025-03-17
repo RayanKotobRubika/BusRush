@@ -9,24 +9,24 @@ public class StopSign : Obstacle
         _buildEffect.Play();
     }
     
-    private void OnTriggerEnter(Collider other)
-    {
-        if (!other.TryGetComponent(out Passenger passenger)) return;
-
-        if (passenger.Color == Color) passenger.IsStopped = true;
+    protected override void EnterObstacle(Passenger passenger)
+    { 
+        base.EnterObstacle(passenger);
         
-        Passengers.Add(passenger);
+        passenger.IsStopped = true;
     }
 
-    private void OnTriggerExit(Collider other)
+    protected override void ExitObstacle(Passenger passenger)
     {
-        if (!other.TryGetComponent(out Passenger passenger)) return;
-
-        if (passenger.Color == Color) passenger.IsStopped = false;
+        base.ExitObstacle(passenger);
+        
+        passenger.IsStopped = false;
     }
 
     protected override void KilledObstacle(Passenger passenger)
     {
-        if (passenger.Color == Color) passenger.IsStopped = false;
+        base.KilledObstacle(passenger);
+        
+        passenger.IsStopped = false;
     }
 }

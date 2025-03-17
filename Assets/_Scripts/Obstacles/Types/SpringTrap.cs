@@ -20,17 +20,10 @@ public class SpringTrap : Obstacle
         _buildEffect.Play();
     }
     
-    private void OnTriggerEnter(Collider other)
+    protected override void EnterObstacle(Passenger passenger)
     {
-        if (!other.TryGetComponent(out Passenger passenger)) return;
-
-        if (passenger.Color == Color) BumpPassenger(passenger);
+        base.EnterObstacle(passenger);
         
-        Passengers.Add(passenger);
-    }
-
-    private void BumpPassenger(Passenger passenger)
-    {
         passenger.Agent.enabled = false;
         passenger.RB.isKinematic = false;
         passenger.Coll.enabled = false;

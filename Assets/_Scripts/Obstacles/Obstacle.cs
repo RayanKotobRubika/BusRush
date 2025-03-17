@@ -22,14 +22,41 @@ public class Obstacle : MonoBehaviour
     {
         _lifeTimer -= Time.deltaTime;
 
-        if (_lifeTimer <= 0)
+        if (!(_lifeTimer <= 0)) return;
+        
+        foreach (Passenger passenger in Passengers)
         {
-            foreach (Passenger passenger in Passengers)
-            {
-                KilledObstacle(passenger);
-            }
-            Destroy(gameObject);
+            KilledObstacle(passenger);
         }
+        Destroy(gameObject);
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!other.TryGetComponent(out Passenger passenger)) return;
+
+        if (passenger.Color != Color) return;
+        
+        EnterObstacle(passenger);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (!other.TryGetComponent(out Passenger passenger)) return;
+
+        if (passenger.Color != Color) return;
+        
+        ExitObstacle(passenger);
+    }
+    
+    protected virtual void EnterObstacle(Passenger passenger)
+    { 
+        Passengers.Add(passenger);
+    }
+    
+    protected virtual void ExitObstacle(Passenger passenger)
+    {
+        Passengers.Remove(passenger);
     }
 
     protected virtual void KilledObstacle(Passenger passenger)

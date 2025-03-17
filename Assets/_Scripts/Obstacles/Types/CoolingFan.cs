@@ -13,31 +13,25 @@ public class CoolingFan : Obstacle
         _buildEffect.Play();
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected override void EnterObstacle(Passenger passenger)
     {
-        if (!other.TryGetComponent(out Passenger passenger)) return;
-
-        if (passenger.Color == Color)
-        {
-            passenger.Agent.enabled = false;
-            passenger.RB.isKinematic = false;
-            passenger.RB.AddForce(_pushStrength * Vector3.back, ForceMode.VelocityChange);
+        base.EnterObstacle(passenger);
         
-            Passengers.Add(passenger);
-        }
+        passenger.Agent.enabled = false;
+        passenger.RB.isKinematic = false;
+        passenger.RB.AddForce(_pushStrength * Vector3.back, ForceMode.VelocityChange);
+        
+        Passengers.Add(passenger);
     }
-
-    private void OnTriggerExit(Collider other)
+    
+    protected override void ExitObstacle(Passenger passenger)
     {
-        if (!other.TryGetComponent(out Passenger passenger)) return;
-
-        if (passenger.Color == Color)
-        {
-            passenger.Agent.enabled = true;
-            passenger.RB.isKinematic = true;
+        base.ExitObstacle(passenger);
         
-            Passengers.Remove(passenger);
-        }
+        passenger.Agent.enabled = true;
+        passenger.RB.isKinematic = true;
+        
+        Passengers.Remove(passenger);
     }
 
     protected override void KilledObstacle(Passenger passenger)
